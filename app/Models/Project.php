@@ -85,12 +85,22 @@ class Project extends Model
     }
 
     /**
-     * Public URL for the uploaded cover image, or null if none was
-     * uploaded yet (views fall back to a plain gradient in that case).
-     * Requires `php artisan storage:link` to have been run.
+     * Public URL for the cover image, or null if none is available
+     * (views fall back to a gradient in that case).
+     *
+     * Prefers a committed file under public/images/projects/{slug}.* so
+     * GitHub Pages can serve photos without Laravel storage. Falls back
+     * to the uploaded storage path (requires `php artisan storage:link`).
      */
     public function getCoverImageUrlAttribute(): ?string
     {
+        foreach (['jpg', 'jpeg', 'png', 'webp'] as $ext) {
+            $relative = 'images/projects/'.$this->slug.'.'.$ext;
+            if (is_file(public_path($relative))) {
+                return asset($relative);
+            }
+        }
+
         return $this->cover_image
             ? Storage::disk('public')->url($this->cover_image)
             : null;

@@ -681,8 +681,8 @@
 
         @php
             $contacts = [
-                ['name' => 'Nelson Besigye', 'phone' => '+256 772 902 188', 'phoneHref' => '+256772902188', 'email' => 'nelson@sinelhospitality.com'],
-                ['name' => 'Simon Ateesa', 'phone' => '+256 774 058 752', 'phoneHref' => '+256774058752', 'email' => 'simon@sinelhospitality.com'],
+                ['name' => 'Nelson Besigye', 'phone' => '+256 772 902 188', 'phoneHref' => '+256772902188', 'whatsapp' => 'https://wa.me/256772902188'],
+                ['name' => 'Simon Ateesa', 'phone' => '+256 774 058 752', 'phoneHref' => '+256774058752', 'whatsapp' => 'https://wa.me/256774058752'],
             ];
         @endphp
 
@@ -696,7 +696,14 @@
                     </span>
                     <p class="mt-5 font-display text-xl font-semibold">{{ $contact['name'] }}</p>
                     <a href="tel:{{ $contact['phoneHref'] }}" class="block mt-2 text-sm text-sage/70 hover:text-coral transition-colors">{{ $contact['phone'] }}</a>
-                    <a href="mailto:{{ $contact['email'] }}" class="block text-sm text-sage/70 hover:text-coral transition-colors">{{ $contact['email'] }}</a>
+                    <a href="{{ $contact['whatsapp'] }}" target="_blank" rel="noopener"
+                       class="mt-2 inline-flex items-center gap-2 text-sm text-coral hover:text-sage transition-colors">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.7-3.2-.3-.5.3-.4.8-1.5.1-.2 0-.4 0-.5l-.8-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4 0-.2-.2-.2-.5-.3Z"/>
+                            <path d="M20.5 3.5A11 11 0 0 0 2.2 16.7L1 23l6.4-1.7A11 11 0 1 0 20.5 3.5Zm-8.6 17.7h-.1a9.1 9.1 0 0 1-4.6-1.3l-.3-.2-3.8 1 1-3.7-.2-.4a9.1 9.1 0 1 1 8 4.6Z"/>
+                        </svg>
+                        WhatsApp
+                    </a>
                 </div>
             @endforeach
         </div>

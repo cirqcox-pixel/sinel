@@ -86,6 +86,7 @@ class ExportGitHubPages extends Command
         $copies = [
             public_path('css') => $output.DIRECTORY_SEPARATOR.'css',
             public_path('js') => $output.DIRECTORY_SEPARATOR.'js',
+            public_path('images') => $output.DIRECTORY_SEPARATOR.'images',
         ];
 
         foreach ($copies as $from => $to) {
