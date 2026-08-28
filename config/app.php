@@ -55,6 +55,12 @@ return [
     'url' => env('APP_URL', 'http://localhost'),
 
     /*
+    | GitHub Pages cannot run PHP. When true, public pages are exported as
+    | static HTML and login/admin links are hidden from the marketing site.
+    */
+    'static_export' => (bool) env('STATIC_EXPORT', false),
+
+    /*
     |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------

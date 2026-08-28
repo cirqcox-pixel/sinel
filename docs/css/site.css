@@ -1,0 +1,117 @@
+/* Sinel Hospitality — component styles
+   Loaded as a plain stylesheet (public/css/site.css). Tailwind's utility
+   classes come from the CDN script in layouts/app.blade.php, so this file
+   only needs the custom bits Tailwind's utilities can't express directly. */
+
+/* ---------- Utility ticker (header) ---------- */
+.ticker-track {
+    display: inline-flex;
+    animation: ticker 28s linear infinite;
+    white-space: nowrap;
+}
+@keyframes ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .ticker-track { animation: none; }
+}
+
+/* ---------- Nav underline hover ---------- */
+.nav-link { position: relative; }
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -4px;
+    width: 0; height: 2px;
+    background: #637FC4; /* coral */
+    transition: width .25s ease;
+}
+.nav-link:hover::after,
+.nav-link:focus-visible::after { width: 100%; }
+
+/* ---------- Mobile off-canvas menu ---------- */
+.mobile-menu {
+    transform: translateX(100%);
+    transition: transform .35s ease;
+}
+.mobile-menu.open { transform: translateX(0); }
+
+/* ---------- Focus visibility ---------- */
+a:focus-visible, button:focus-visible {
+    outline: 2px solid #637FC4; /* coral */
+    outline-offset: 3px;
+}
+
+/* ---------- Scroll-reveal (paired with site.js IntersectionObserver) ---------- */
+.reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity .6s ease, transform .6s ease;
+}
+.reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* ---------- Project index (Insights section) ---------- */
+/* Directory row states */
+.project-row {
+    cursor: pointer;
+    background: transparent;
+    border-top: none; /* top rule is on the list wrapper; each row owns its bottom rule */
+}
+.project-row .row-number {
+    color: rgba(245, 245, 247, 0.35); /* sage/35 */
+    transition: color .25s ease;
+}
+.project-row .row-name {
+    color: rgba(245, 245, 247, 0.65); /* sage/65 */
+    transition: color .25s ease;
+}
+.project-row .row-meta {
+    color: rgba(245, 245, 247, 0.35);
+    transition: color .25s ease;
+}
+.project-row .row-arrow {
+    color: rgba(245, 245, 247, 0.25);
+    transition: color .25s ease, transform .25s ease;
+}
+.project-row.is-active .row-number,
+.project-row:hover .row-number,
+.project-row:focus-visible .row-number {
+    color: #637FC4; /* coral */
+}
+.project-row.is-active .row-name,
+.project-row:hover .row-name,
+.project-row:focus-visible .row-name {
+    color: #F3F5F0; /* sage */
+}
+.project-row.is-active .row-meta,
+.project-row:hover .row-meta,
+.project-row:focus-visible .row-meta {
+    color: rgba(245, 245, 247, 0.6);
+}
+.project-row.is-active .row-arrow,
+.project-row:hover .row-arrow,
+.project-row:focus-visible .row-arrow {
+    color: #637FC4;
+    transform: translateX(4px);
+}
+
+/* Visual panel cross-fade */
+.project-panel {
+    opacity: 0;
+    z-index: 0;
+    transition: opacity .6s ease;
+}
+.project-panel.is-active {
+    opacity: 1;
+    z-index: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+    .project-panel { transition: none; }
+}

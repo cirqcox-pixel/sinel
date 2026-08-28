@@ -71,6 +71,7 @@
 
             <div class="flex items-center gap-3">
 
+                @unless(config('app.static_export'))
                 @auth
                     {{-- Signed in: straight to the right dashboard, plus logout --}}
                     <a href="{{ auth()->user()->isAdmin() ? route('admin.dashboard') : route('student.dashboard') }}"
@@ -107,6 +108,7 @@
                         </div>
                     </details>
                 @endauth
+                @endunless
 
                 <a href="#contact"
                    class="hidden lg:inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors">
@@ -145,6 +147,7 @@
         </nav>
 
         <div class="mt-10 pt-6 border-t border-sage/15">
+            @unless(config('app.static_export'))
             @auth
                 <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-sage/50 mb-3">Account</p>
                 <div class="flex flex-col gap-3 font-body text-base">
@@ -182,6 +185,7 @@
                     </a>
                 </div>
             @endauth
+            @endunless
         </div>
 
         <a href="#contact" class="mt-6 inline-flex justify-center items-center gap-2 bg-coral text-white font-semibold px-5 py-3 rounded-full">
