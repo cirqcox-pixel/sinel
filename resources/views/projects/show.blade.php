@@ -85,7 +85,7 @@
             <div class="grid sm:grid-cols-3 gap-6">
                 @foreach ($related as $item)
                     <a href="{{ route('projects.show', $item) }}"
-                       class="group relative aspect-[4/5] rounded-3xl overflow-hidden"
+                       class="group relative aspect-[4/5] rounded-xl overflow-hidden"
                        @unless($item->cover_image_url) style="background: linear-gradient(160deg, {{ $item->color_from }}, {{ $item->color_to }});" @endunless>
                         @if ($item->cover_image_url)
                             <img src="{{ $item->cover_image_url }}" alt="{{ $item->title }}" class="absolute inset-0 w-full h-full object-cover">

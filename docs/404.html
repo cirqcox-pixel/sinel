@@ -8,29 +8,27 @@
 
     <link rel="icon" href="https://cirqcox-pixel.github.io/sinel/sinel_logo.png" sizes="any">
 
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        ink: '#15161A',
-                        emerald: { DEFAULT: '#4D69B1', light: '#8599CA', deep: '#1E2947' },
-                        coral: { DEFAULT: '#637FC4', dark: '#405EAA' },
-                        sage: '#F5F5F7',
-                        card: '#FFFFFF',
-                        line: '#E3E3E7',
+                        ink: '#2A241E',
+                        emerald: { DEFAULT: '#3D5A80', light: '#6B86A8', deep: '#1E2947' },
+                        coral: { DEFAULT: '#C4A574', dark: '#A88858' },
+                        sage: '#F4EFE6',
+                        card: '#FFFBF5',
+                        line: '#E5D9C8',
                     },
                     fontFamily: {
-                        display: ['Fraunces', 'serif'],
-                        body: ['Inter', 'sans-serif'],
-                        mono: ['"IBM Plex Mono"', 'monospace'],
+                        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        body: ['Outfit', 'sans-serif'],
+                        mono: ['Outfit', 'sans-serif'],
                     },
                 },
             },
@@ -43,75 +41,38 @@
     </head>
 <body class="antialiased bg-sage text-ink font-body">
 
-    <header class="sticky top-0 z-50">
-
-    
-    <div class="bg-emerald text-sage/90 overflow-hidden border-b border-emerald-light/40">
-        <div class="max-w-[1400px] mx-auto flex items-center justify-between px-5 md:px-8 h-9 text-xs font-mono tracking-wide">
-            <div class="hidden sm:flex items-center overflow-hidden w-full" aria-hidden="true">
-                <div class="ticker-track">
-                                                                <span class="mx-6">TURNKEY PROJECTS</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">HOSPITALITY MANAGEMENT</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">DESIGN &amp; BUILD</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">PRE-OPENING &amp; LAUNCH</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">REVENUE MANAGEMENT</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">STAFF TRAINING</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">ASSET MANAGEMENT</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">QUALITY AUDITS</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">TURNKEY PROJECTS</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">HOSPITALITY MANAGEMENT</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">DESIGN &amp; BUILD</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">PRE-OPENING &amp; LAUNCH</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">REVENUE MANAGEMENT</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">STAFF TRAINING</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">ASSET MANAGEMENT</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">QUALITY AUDITS</span><span class="text-coral">&middot;</span>
-                                    </div>
-            </div>
-            <p class="flex sm:hidden items-center gap-1 font-mono text-[11px]">THE BEST HOSPITALITY COMPANY IN AFRICA</p>
-            <a href="mailto:info@sinelhospitality.com" class="hidden md:inline-block shrink-0 pl-6 hover:text-coral transition-colors">
-                info@sinelhospitality.com
-            </a>
-        </div>
-    </div>
-
-    
-    <div class="bg-sage/95 backdrop-blur border-b border-line">
-        <div class="max-w-[1400px] mx-auto flex items-center justify-between px-5 md:px-8 h-20">
+    <header class="site-header sticky top-0 z-50">
+    <div class="site-header-bar bg-sage/90 backdrop-blur-md border-b border-line/80">
+        <div class="max-w-[1400px] mx-auto flex items-center justify-between px-5 md:px-8 h-[4.75rem]">
 
             <a href="https://cirqcox-pixel.github.io/sinel/" class="flex items-center gap-3 group">
-                
-                <img src="https://cirqcox-pixel.github.io/sinel/sinel_logo.png" alt="Sinel Hospitality" class="h-12 w-auto shrink-0">
+                <img src="https://cirqcox-pixel.github.io/sinel/sinel_logo.png" alt="Sinel Hospitality" class="h-11 w-auto shrink-0">
             </a>
 
-            <nav class="hidden lg:flex items-center gap-9 font-medium text-[15px] text-ink/80" aria-label="Primary">
+            <nav class="hidden lg:flex items-center gap-8 text-[13px] tracking-[0.04em] text-ink/70" aria-label="Primary">
                                                     <a href="https://cirqcox-pixel.github.io/sinel/"
-                       class="nav-link transition-colors text-emerald">
+                       class="nav-link text-ink is-active">
                         Home
                     </a>
                                     <a href="#about"
-                       class="nav-link transition-colors hover:text-emerald">
+                       class="nav-link hover:text-ink">
                         About
                     </a>
                                     <a href="#solutions"
-                       class="nav-link transition-colors hover:text-emerald">
-                        Solutions
-                    </a>
-                                    <a href="#why-us"
-                       class="nav-link transition-colors hover:text-emerald">
-                        Why Us
+                       class="nav-link hover:text-ink">
+                        Work
                     </a>
                                     <a href="#insights"
-                       class="nav-link transition-colors hover:text-emerald">
-                        Insights
+                       class="nav-link hover:text-ink">
+                        Houses
                     </a>
                                     <a href="#academy"
-                       class="nav-link transition-colors hover:text-emerald">
+                       class="nav-link hover:text-ink">
                         Academy
                     </a>
                                     <a href="#contact"
-                       class="nav-link transition-colors hover:text-emerald">
-                        Contact
+                       class="nav-link hover:text-ink">
+                        Visit
                     </a>
                             </nav>
 
@@ -119,8 +80,8 @@
 
                 
                 <a href="#contact"
-                   class="hidden lg:inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors">
-                    Discuss Your Project
+                   class="btn btn-primary hidden lg:inline-flex">
+                    Start a conversation
                 </a>
 
                 <button type="button"
@@ -128,105 +89,82 @@
                         aria-label="Open menu"
                         aria-expanded="false"
                         aria-controls="mobileMenu"
-                        class="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 rounded-full border border-line">
-                    <span class="block w-5 h-[2px] bg-ink"></span>
-                    <span class="block w-5 h-[2px] bg-ink"></span>
+                        class="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 rounded border border-line">
+                    <span class="block w-5 h-[1.5px] bg-ink"></span>
+                    <span class="block w-5 h-[1.5px] bg-ink"></span>
                 </button>
             </div>
         </div>
     </div>
 
-    
     <div id="mobileMenu"
-         class="mobile-menu fixed top-0 right-0 h-full w-[82%] max-w-sm bg-emerald text-sage z-[60] shadow-2xl px-7 pt-7 pb-10 flex flex-col"
+         class="mobile-menu fixed top-0 right-0 h-full w-[82%] max-w-sm bg-emerald-deep text-sage z-[60] shadow-2xl px-7 pt-7 pb-10 flex flex-col"
          role="dialog" aria-modal="true" aria-label="Mobile navigation">
         <div class="flex items-center justify-between mb-10">
-            <span class="font-display text-lg font-semibold">Sinel Hospitality</span>
+            <span class="font-display text-2xl italic">Sinel</span>
             <button type="button" id="menuClose" aria-label="Close menu"
-                    class="w-9 h-9 rounded-full border border-sage/30 flex items-center justify-center">
-                <span class="block w-4 h-[2px] bg-sage rotate-45 relative top-[1px]"></span>
-                <span class="block w-4 h-[2px] bg-sage -rotate-45 relative -left-4"></span>
+                    class="w-9 h-9 rounded border border-sage/20 flex items-center justify-center text-sage">
+                &times;
             </button>
         </div>
-        <nav class="flex flex-col gap-6 font-display text-2xl" aria-label="Mobile primary">
+        <nav class="flex flex-col gap-5 font-display text-3xl italic" aria-label="Mobile primary">
                             <a href="https://cirqcox-pixel.github.io/sinel/" class="hover:text-coral transition-colors">Home</a>
                             <a href="#about" class="hover:text-coral transition-colors">About</a>
-                            <a href="#solutions" class="hover:text-coral transition-colors">Solutions</a>
-                            <a href="#why-us" class="hover:text-coral transition-colors">Why Us</a>
-                            <a href="#insights" class="hover:text-coral transition-colors">Insights</a>
+                            <a href="#solutions" class="hover:text-coral transition-colors">Work</a>
+                            <a href="#insights" class="hover:text-coral transition-colors">Houses</a>
                             <a href="#academy" class="hover:text-coral transition-colors">Academy</a>
-                            <a href="#contact" class="hover:text-coral transition-colors">Contact</a>
+                            <a href="#contact" class="hover:text-coral transition-colors">Visit</a>
                     </nav>
 
         <div class="mt-10 pt-6 border-t border-sage/15">
                     </div>
 
-        <a href="#contact" class="mt-6 inline-flex justify-center items-center gap-2 bg-coral text-white font-semibold px-5 py-3 rounded-full">
-            Discuss Your Project
+        <a href="#contact" class="btn btn-gold mt-auto">
+            Start a conversation
         </a>
     </div>
-    <div id="menuOverlay" class="fixed inset-0 bg-ink/50 z-[55] hidden"></div>
+    <div id="menuOverlay" class="fixed inset-0 bg-ink/40 z-[55] hidden"></div>
 </header>
+
     <main>
         
+<section class="relative min-h-[88vh] flex items-end overflow-hidden">
+    <div class="absolute inset-0">
+        <img
+            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=2000&q=80"
+            alt="Sunlit resort terrace overlooking water"
+            class="w-full h-full object-cover"
+        >
+        <div class="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/45 to-ink/15"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-ink/20"></div>
+    </div>
 
-<section class="relative overflow-hidden">
-    <div class="max-w-[1400px] mx-auto px-5 md:px-8 pt-14 sm:pt-20 pb-16 sm:pb-24 grid lg:grid-cols-[1.1fr_0.9fr] gap-14 items-center">
-        <div>
-            <span class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-emerald mb-6">
-                <span class="w-8 h-px bg-coral"></span> Design. Develop. Manage. Grow.
-            </span>
-            <h1 class="font-display text-[2.6rem] leading-[1.08] sm:text-6xl font-semibold text-ink tracking-tight">
-                Hospitality Solutions for<br class="hidden sm:block">
-                <span class="italic text-emerald">Hotels, Restaurants &amp; Resorts.</span>
-            </h1>
-            <p class="mt-6 text-lg text-ink/70 max-w-xl leading-relaxed">
-                We design, build, improve and manage hospitality businesses across East Africa —
-                from concept development and pre-opening to operational management and commercial growth.
-            </p>
-
-            
-            <div class="mt-8 grid sm:grid-cols-2 gap-4 max-w-xl">
-                <div class="bg-card border border-line rounded-2xl px-5 py-4">
-                    <p class="font-display text-base font-semibold text-ink">Turnkey Projects</p>
-                    <p class="mt-1 text-xs font-mono uppercase tracking-wide text-ink/50">Design • Build • Equip • Launch</p>
-                </div>
-                <div class="bg-card border border-line rounded-2xl px-5 py-4">
-                    <p class="font-display text-base font-semibold text-ink">Hospitality Management</p>
-                    <p class="mt-1 text-xs font-mono uppercase tracking-wide text-ink/50">Operate • Improve • Grow</p>
-                </div>
-            </div>
-
-            <div class="mt-9 flex flex-wrap items-center gap-4">
-                <a href="#contact" class="inline-flex items-center gap-2 bg-emerald hover:bg-emerald-light text-sage font-semibold px-6 py-3.5 rounded-full transition-colors">
-                    Let's Build Your Hospitality Business
-                </a>
-                <a href="#solutions" class="inline-flex items-center gap-2 text-ink font-semibold px-6 py-3.5 rounded-full border border-line hover:border-emerald hover:text-emerald transition-colors">
-                    See What We Deliver
-                </a>
-            </div>
+    <div class="relative max-w-[1400px] w-full mx-auto px-5 md:px-8 pt-28 pb-16 sm:pb-20">
+        <p class="text-[11px] uppercase tracking-[0.28em] text-coral mb-5">Est. 2022 &middot; A house for houses</p>
+        <h1 class="font-display text-[2.7rem] sm:text-6xl lg:text-7xl font-medium text-sage leading-[1.05] max-w-3xl">
+            We work with you to bring the future of your property <span class="italic">to life.</span>
+        </h1>
+        <p class="mt-6 text-base sm:text-lg text-sage/80 max-w-xl leading-relaxed font-light">
+            From the first sketch to the first guest — Sinel stays at the table.
+            Hotels, restaurants and resorts, opened and kept with care.
+        </p>
+        <div class="mt-9 flex flex-wrap items-center gap-3">
+            <a href="#contact" class="btn btn-gold">Begin with us</a>
+            <a href="#insights" class="btn btn-ghost btn-on-dark">See the houses</a>
         </div>
 
-        <div class="relative">
-            <div class="rounded-[2rem] bg-emerald overflow-hidden relative">
-                <div class="absolute inset-0 bg-gradient-to-br from-emerald via-emerald-deep to-ink/80"></div>
-                <div class="relative p-8 text-sage">
-                    <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-4">Our Approach</p>
-                    <p class="font-display text-xl sm:text-3xl italic leading-snug">
-                        &ldquo;We don't just advise — we build and operate hospitality businesses.&rdquo;
-                    </p>
-
-                    <div class="mt-8 pt-6 border-t border-sage/15">
-                        <p class="font-display text-4xl font-semibold">Founded 2022</p>
-                        <p class="text-sm text-sage/70 mt-1 max-w-sm">
-                            4 years as a company. 50+ years of combined hospitality leadership behind it.
-                        </p>
-                    </div>
-                </div>
+        <div class="mt-14 grid grid-cols-3 gap-6 max-w-lg border-t border-sage/20 pt-6">
+            <div>
+                <p class="font-display text-3xl text-sage italic">20+</p>
+                <p class="mt-1 text-[11px] uppercase tracking-[0.16em] text-sage/60">Properties</p>
             </div>
-            <div class="absolute -bottom-6 -left-6 bg-card border border-line rounded-2xl px-5 py-4 shadow-xl hidden sm:block">
-                <p class="font-mono text-[10px] uppercase tracking-widest text-ink/50">Two Ways We Deliver</p>
-                <p class="font-display text-lg font-semibold text-emerald">Turnkey Projects &amp; Management Solutions</p>
+            <div>
+                <p class="font-display text-3xl text-sage italic">4</p>
+                <p class="mt-1 text-[11px] uppercase tracking-[0.16em] text-sage/60">Countries</p>
+            </div>
+            <div>
+                <p class="font-display text-3xl text-sage italic">2022</p>
+                <p class="mt-1 text-[11px] uppercase tracking-[0.16em] text-sage/60">Founded</p>
             </div>
         </div>
     </div>
@@ -237,16 +175,22 @@
     <div class="max-w-[1400px] mx-auto px-5 md:px-8">
 
         
-        <div class="grid lg:grid-cols-[0.55fr_1fr] gap-14 mb-20">
-            <div class="reveal">
-                <span class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">
-                    <span class="w-8 h-px bg-coral"></span> Who We Are
-                </span>
-                <h2 class="font-display text-4xl sm:text-5xl font-semibold text-ink tracking-tight leading-[1.1]">
-                    A hospitality<br><span class="italic text-emerald">solutions company.</span>
-                </h2>
+        <div class="grid lg:grid-cols-[0.9fr_1.1fr] gap-12 lg:gap-16 items-center mb-20">
+            <div class="reveal photo-frame aspect-[4/5] max-h-[560px]">
+                <img
+                    src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80"
+                    alt="A quietly set hotel dining room"
+                    loading="lazy"
+                >
             </div>
-            <div class="reveal space-y-5 text-ink/70 leading-relaxed">
+            <div class="reveal">
+                <span class="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-coral mb-5">
+                    <span class="w-8 h-px bg-coral"></span> Who we are
+                </span>
+                <h2 class="font-display text-4xl sm:text-5xl font-medium text-ink tracking-tight leading-[1.12]">
+                    A partner in the room,<br><span class="italic text-emerald">not a deck on the table.</span>
+                </h2>
+                <div class="mt-6 space-y-5 text-ink/70 leading-relaxed">
                 <p>
                     Sinel Hospitality is a hospitality solutions company specializing in turnkey hospitality
                     projects and professional management solutions. We partner with hotel owners, investors,
@@ -258,20 +202,21 @@
                     deliver practical solutions that create exceptional guest experiences and sustainable
                     business performance.
                 </p>
+                </div>
             </div>
         </div>
 
         
         <div class="grid sm:grid-cols-2 gap-5 mb-20">
-            <div class="reveal bg-card border border-line rounded-3xl p-8">
-                <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-4">Vision</p>
-                <p class="font-display text-xl sm:text-2xl text-ink leading-snug">
+            <div class="reveal bg-card border border-line rounded-xl p-8">
+                <p class="text-[11px] uppercase tracking-[0.22em] text-coral mb-4">Vision</p>
+                <p class="font-display text-2xl sm:text-3xl italic text-ink leading-snug">
                     The best hospitality company in Africa.
                 </p>
             </div>
-            <div class="reveal bg-card border border-line rounded-3xl p-8" style="transition-delay: 80ms">
-                <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-4">Mission</p>
-                <p class="font-display text-xl sm:text-2xl text-ink leading-snug">
+            <div class="reveal bg-card border border-line rounded-xl p-8" style="transition-delay: 80ms">
+                <p class="text-[11px] uppercase tracking-[0.22em] text-coral mb-4">Mission</p>
+                <p class="font-display text-2xl sm:text-3xl italic text-ink leading-snug">
                     Above-average returns through professional management and real partnership.
                 </p>
             </div>
@@ -323,11 +268,15 @@
                     </div>
 
         
-        <div class="reveal relative rounded-[2rem] overflow-hidden bg-emerald-deep text-sage px-8 py-16 sm:py-20 text-center">
-            <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-6">Our Purpose</p>
-            <p class="font-display text-2xl sm:text-4xl italic leading-snug max-w-3xl mx-auto">
-                &ldquo;Innovative, complete, wholesome hospitality — in a unique, sustainable environment.&rdquo;
-            </p>
+        <div class="reveal relative rounded-xl overflow-hidden min-h-[280px] flex items-center">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1800&q=80" alt="" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-deep/75"></div>
+            <div class="relative px-8 py-16 sm:py-20 text-center text-sage w-full">
+                <p class="text-[11px] uppercase tracking-[0.22em] text-coral mb-6">Our purpose</p>
+                <p class="font-display text-2xl sm:text-4xl italic leading-snug max-w-3xl mx-auto">
+                    &ldquo;Innovative, complete, wholesome hospitality — in a unique, sustainable environment.&rdquo;
+                </p>
+            </div>
         </div>
     </div>
 </section>
@@ -345,41 +294,37 @@
             </h2>
         </div>
 
-                <div class="reveal flex flex-wrap items-center gap-3 sm:gap-2">
-                            <span class="inline-flex items-center justify-center bg-card border border-line rounded-full px-5 py-3 font-display text-base sm:text-lg font-semibold text-ink">
-                    Discover
-                </span>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald shrink-0">
-                        <path d="m9 18 6-6-6-6"/>
-                    </svg>
-                                            <span class="inline-flex items-center justify-center bg-card border border-line rounded-full px-5 py-3 font-display text-base sm:text-lg font-semibold text-ink">
-                    Design
-                </span>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald shrink-0">
-                        <path d="m9 18 6-6-6-6"/>
-                    </svg>
-                                            <span class="inline-flex items-center justify-center bg-card border border-line rounded-full px-5 py-3 font-display text-base sm:text-lg font-semibold text-ink">
-                    Build
-                </span>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald shrink-0">
-                        <path d="m9 18 6-6-6-6"/>
-                    </svg>
-                                            <span class="inline-flex items-center justify-center bg-card border border-line rounded-full px-5 py-3 font-display text-base sm:text-lg font-semibold text-ink">
-                    Open
-                </span>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald shrink-0">
-                        <path d="m9 18 6-6-6-6"/>
-                    </svg>
-                                            <span class="inline-flex items-center justify-center bg-card border border-line rounded-full px-5 py-3 font-display text-base sm:text-lg font-semibold text-ink">
-                    Operate
-                </span>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald shrink-0">
-                        <path d="m9 18 6-6-6-6"/>
-                    </svg>
-                                            <span class="inline-flex items-center justify-center bg-card border border-line rounded-full px-5 py-3 font-display text-base sm:text-lg font-semibold text-ink">
-                    Optimize
-                </span>
+                <div class="reveal grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-4">
+                            <div class="process-step">
+                    <p class="font-display text-3xl italic text-coral">01</p>
+                    <p class="mt-2 font-display text-xl text-ink">Discover</p>
+                                            <span class="hidden lg:block absolute top-5 right-0 w-8 h-px bg-line translate-x-1/2"></span>
                                     </div>
+                            <div class="process-step">
+                    <p class="font-display text-3xl italic text-coral">02</p>
+                    <p class="mt-2 font-display text-xl text-ink">Design</p>
+                                            <span class="hidden lg:block absolute top-5 right-0 w-8 h-px bg-line translate-x-1/2"></span>
+                                    </div>
+                            <div class="process-step">
+                    <p class="font-display text-3xl italic text-coral">03</p>
+                    <p class="mt-2 font-display text-xl text-ink">Build</p>
+                                            <span class="hidden lg:block absolute top-5 right-0 w-8 h-px bg-line translate-x-1/2"></span>
+                                    </div>
+                            <div class="process-step">
+                    <p class="font-display text-3xl italic text-coral">04</p>
+                    <p class="mt-2 font-display text-xl text-ink">Open</p>
+                                            <span class="hidden lg:block absolute top-5 right-0 w-8 h-px bg-line translate-x-1/2"></span>
+                                    </div>
+                            <div class="process-step">
+                    <p class="font-display text-3xl italic text-coral">05</p>
+                    <p class="mt-2 font-display text-xl text-ink">Operate</p>
+                                            <span class="hidden lg:block absolute top-5 right-0 w-8 h-px bg-line translate-x-1/2"></span>
+                                    </div>
+                            <div class="process-step">
+                    <p class="font-display text-3xl italic text-coral">06</p>
+                    <p class="mt-2 font-display text-xl text-ink">Optimize</p>
+                                    </div>
+                    </div>
     </div>
 </section>
 
@@ -399,7 +344,7 @@
         
         <div class="grid lg:grid-cols-2 gap-6">
             
-            <div class="reveal bg-card border border-line rounded-3xl p-8">
+            <div class="reveal bg-card border border-line rounded-xl p-8">
                 <span class="w-12 h-12 rounded-full bg-emerald/10 flex items-center justify-center">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
                         <polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>
@@ -436,7 +381,7 @@
             </div>
 
             
-            <div class="reveal bg-card border border-line rounded-3xl p-8" style="transition-delay: 80ms">
+            <div class="reveal bg-card border border-line rounded-xl p-8" style="transition-delay: 80ms">
                 <span class="w-12 h-12 rounded-full bg-emerald/10 flex items-center justify-center">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
                         <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
@@ -605,28 +550,12 @@
 
 
 <style>
-    #insights .project-row { cursor: pointer; background: transparent; }
-    #insights .project-row .row-number { color: rgba(21,22,26,.35); transition: color .25s ease; }
-    #insights .project-row .row-name { color: rgba(21,22,26,.65); transition: color .25s ease; }
-    #insights .project-row .row-meta { color: rgba(21,22,26,.35); transition: color .25s ease; }
-    #insights .project-row .row-arrow { color: rgba(21,22,26,.25); transition: color .25s ease, transform .25s ease; }
     #insights .project-row.is-active .row-number,
     #insights .project-row:hover .row-number,
-    #insights .project-row:focus-visible .row-number { color: #637FC4; }
-    #insights .project-row.is-active .row-name,
-    #insights .project-row:hover .row-name,
-    #insights .project-row:focus-visible .row-name { color: #15161A; }
-    #insights .project-row.is-active .row-meta,
-    #insights .project-row:hover .row-meta,
-    #insights .project-row:focus-visible .row-meta { color: rgba(21,22,26,.6); }
     #insights .project-row.is-active .row-arrow,
-    #insights .project-row:hover .row-arrow,
-    #insights .project-row:focus-visible .row-arrow { color: #637FC4; transform: translateX(4px); }
-    #insights .project-panel { opacity: 0; z-index: 0; transition: opacity .6s ease; }
-    #insights .project-panel.is-active { opacity: 1; z-index: 1; }
-    @media (prefers-reduced-motion: reduce) {
-        #insights .project-panel { transition: none; }
-    }
+    #insights .project-row:hover .row-arrow { color: #C4A574; }
+    #insights .project-row.is-active .row-name,
+    #insights .project-row:hover .row-name { color: #2A241E; }
 </style>
 <section id="insights" class="py-16 sm:py-20 md:py-24 lg:py-28 bg-sage overflow-hidden">
     <div class="max-w-[1400px] mx-auto px-5 md:px-8">
@@ -636,8 +565,8 @@
                 <span class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">
                     <span class="w-8 h-px bg-coral"></span> Featured Projects
                 </span>
-                <h2 class="font-display text-4xl sm:text-5xl font-semibold text-ink tracking-tight leading-[1.1]">
-                    Real properties.<br><span class="italic text-emerald">Real results.</span>
+                <h2 class="font-display text-4xl sm:text-5xl font-medium text-ink tracking-tight leading-[1.1]">
+                    Houses we keep.<br><span class="italic text-emerald">Guests can feel it.</span>
                 </h2>
             </div>
             <a href="https://cirqcox-pixel.github.io/sinel/projects/" class="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-ink/70 hover:text-emerald transition-colors">
@@ -973,11 +902,8 @@
             <p class="mt-6 text-lg text-ink/65 leading-relaxed max-w-lg">
                 Our advisory playbooks, turned into property-ready training your team can run from day one.
             </p>
-            <a href="https://cirqcox-pixel.github.io/sinel/academy/" class="mt-8 inline-flex items-center gap-2 bg-ink hover:bg-ink/90 text-sage font-semibold px-6 py-3.5 rounded-full transition-colors">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/>
-                </svg>
-                Explore the Academy
+            <a href="https://cirqcox-pixel.github.io/sinel/academy/" class="btn btn-primary mt-8">
+                Visit the Academy
             </a>
         </div>
 
@@ -1095,8 +1021,8 @@
             <span class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">
                 <span class="w-8 h-px bg-coral"></span> Schedule a Discovery Meeting
             </span>
-            <h2 class="font-display text-4xl sm:text-5xl font-semibold tracking-tight leading-[1.1]">
-                Let's build your<br><span class="italic">hospitality business.</span>
+            <h2 class="font-display text-4xl sm:text-5xl font-medium tracking-tight leading-[1.1]">
+                Let's sit down and talk<br><span class="italic">about the house you see.</span>
             </h2>
             <p class="mt-5 text-sage/65 text-lg leading-relaxed">
                 New development or existing property — let's discuss your project directly.
@@ -1128,8 +1054,8 @@
                     </div>
 
         <div class="reveal flex flex-wrap items-center gap-4">
-            <a href="mailto:info@sinelhospitality.com" class="inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white font-semibold px-6 py-3.5 rounded-full transition-colors">
-                Discuss Your Project
+            <a href="mailto:info@sinelhospitality.com" class="btn btn-gold">
+                Write to us
             </a>
             <span class="text-sm text-sage/50 font-mono">Kampala, Uganda — operating across Africa &amp; the Middle East</span>
         </div>
@@ -1137,35 +1063,30 @@
 </section>
     </main>
 
-    <footer class="bg-emerald-deep text-sage mt-10">
-
-    
+    <footer class="bg-emerald-deep text-sage mt-0">
     <div class="border-b border-sage/10">
-        <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-16 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
-            <h2 class="font-display text-3xl sm:text-4xl font-medium italic max-w-xl leading-tight">
-                Let&rsquo;s build the best hospitality company in Africa, together.
-            </h2>
+        <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-16 md:py-20 flex flex-col lg:flex-row items-start lg:items-end justify-between gap-8">
+            <div class="max-w-xl">
+                <p class="text-[11px] uppercase tracking-[0.22em] text-coral mb-4">A partner at the table</p>
+                <h2 class="font-display text-4xl sm:text-5xl italic font-medium leading-[1.15]">
+                    Let us help you bring the house of your future into the world.
+                </h2>
+            </div>
             <a href="#contact"
-               class="inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white font-semibold px-7 py-3.5 rounded-full transition-colors shrink-0">
-                Book a Consultation
+               class="btn btn-gold shrink-0">
+                Book a conversation
             </a>
         </div>
     </div>
 
-    
-    <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-[1.1fr_0.9fr_1fr_1.2fr] gap-12">
-
+    <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1.2fr] gap-12">
         <div>
             <a href="https://cirqcox-pixel.github.io/sinel/" class="flex items-center gap-3 mb-5">
-                <span class="w-10 h-10 rounded-full bg-sage/10 border border-sage/20 flex items-center justify-center">
-                    <span class="font-display text-base font-semibold">S</span>
-                </span>
-                <span class="font-display text-lg font-semibold">Sinel Hospitality</span>
+                <img src="https://cirqcox-pixel.github.io/sinel/sinel_logo.png" alt="" class="h-10 w-auto brightness-0 invert opacity-90">
             </a>
-            <p class="text-sage/60 text-sm leading-relaxed max-w-xs">
-                A hospitality consultancy firm delivering hotel &amp; resort management, restaurant
-                management, event planning and personalized itineraries — working toward being the
-                best hospitality company in Africa.
+            <p class="text-sage/65 text-sm leading-relaxed max-w-xs">
+                We design, open and run hotels, restaurants and resorts with the people who own them —
+                quietly, carefully, and for the long stay.
             </p>
             <div class="flex items-center gap-3 mt-6">
                 <a href="https://facebook.com/SinelHospitality" target="_blank" rel="noopener" aria-label="Facebook"
@@ -1184,56 +1105,48 @@
         </div>
 
         <div>
-            <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">Company</p>
+            <p class="text-[11px] uppercase tracking-[0.2em] text-coral mb-5">The house</p>
             <ul class="space-y-3 text-sm text-sage/75">
-                <li><a href="#about" class="hover:text-sage transition-colors">About Us</a></li>
-                <li><a href="#services" class="hover:text-sage transition-colors">Services</a></li>
-                <li><a href="#why-us" class="hover:text-sage transition-colors">Why Choose Us</a></li>
-                <li><a href="#academy" class="hover:text-sage transition-colors">Academy</a></li>
-                <li><a href="#insights" class="hover:text-sage transition-colors">Insights</a></li>
-                <li><a href="#sustainability" class="hover:text-sage transition-colors">Sustainability</a></li>
+                <li><a href="https://cirqcox-pixel.github.io/sinel/#about" class="hover:text-sage transition-colors">About</a></li>
+                <li><a href="https://cirqcox-pixel.github.io/sinel/#solutions" class="hover:text-sage transition-colors">How we work</a></li>
+                <li><a href="https://cirqcox-pixel.github.io/sinel/#insights" class="hover:text-sage transition-colors">Houses we keep</a></li>
+                <li><a href="https://cirqcox-pixel.github.io/sinel/academy/" class="hover:text-sage transition-colors">Academy</a></li>
+                <li><a href="https://cirqcox-pixel.github.io/sinel/#contact" class="hover:text-sage transition-colors">Visit</a></li>
             </ul>
         </div>
 
         <div>
-            <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">Services</p>
+            <p class="text-[11px] uppercase tracking-[0.2em] text-coral mb-5">Care</p>
             <ul class="space-y-3 text-sm text-sage/75">
-                <li><a href="#services" class="hover:text-sage transition-colors">Property Development</a></li>
-                <li><a href="#services" class="hover:text-sage transition-colors">Design &amp; Construction</a></li>
-                <li><a href="#services" class="hover:text-sage transition-colors">Recruitment &amp; Training</a></li>
-                <li><a href="#services" class="hover:text-sage transition-colors">Operations</a></li>
-                <li><a href="#services" class="hover:text-sage transition-colors">Sales &amp; Marketing</a></li>
+                <li><a href="https://cirqcox-pixel.github.io/sinel/#solutions" class="hover:text-sage transition-colors">Turnkey projects</a></li>
+                <li><a href="https://cirqcox-pixel.github.io/sinel/#solutions" class="hover:text-sage transition-colors">Management</a></li>
+                <li><a href="https://cirqcox-pixel.github.io/sinel/#sustainability" class="hover:text-sage transition-colors">Sustainability</a></li>
             </ul>
         </div>
 
         <div>
-            <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">Contact</p>
+            <p class="text-[11px] uppercase tracking-[0.2em] text-coral mb-5">Concierge</p>
             <ul class="space-y-4 text-sm text-sage/75">
                 <li>
                     <p class="text-sage font-medium">Nelson Besigye</p>
-                    <a href="tel:+256772902188" class="block hover:text-sage transition-colors">+256 772 902 188</a>
-                    <a href="mailto:nelson@sinelhospitality.com" class="block hover:text-sage transition-colors">nelson@sinelhospitality.com</a>
+                    <a href="tel:+256772902188" class="block hover:text-coral transition-colors">+256 772 902 188</a>
                 </li>
                 <li>
                     <p class="text-sage font-medium">Simon Ateesa</p>
-                    <a href="tel:+256774058752" class="block hover:text-sage transition-colors">+256 774 058 752</a>
-                    <a href="mailto:simon@sinelhospitality.com" class="block hover:text-sage transition-colors">simon@sinelhospitality.com</a>
-                </li>
-                <li class="pt-1 border-t border-sage/10">
-                    <span>Kampala, Uganda — operating across Africa &amp; the Middle East</span>
+                    <a href="tel:+256774058752" class="block hover:text-coral transition-colors">+256 774 058 752</a>
                 </li>
             </ul>
         </div>
     </div>
 
-    
     <div class="border-t border-sage/10">
-        <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-sage/50">
-            <p>&copy; 2026 Sinel Hospitality. All rights reserved.</p>
-            <p class="font-mono">www.sinelhospitality.com</p>
+        <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-sage/50 tracking-wide">
+            <p>&copy; 2026 Sinel Hospitality. Site by Cirqco Systems.</p>
+            <p>Est. 2022 &middot; Kampala</p>
         </div>
     </div>
 </footer>
+
     
     <script src="https://cirqcox-pixel.github.io/sinel/js/site.js" defer></script>
 

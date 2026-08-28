@@ -13,12 +13,12 @@
             theme: {
                 extend: {
                     colors: {
-                        ink: '#15161A',
-                        emerald: { DEFAULT: '#4D69B1', light: '#8599CA', deep: '#1E2947' },
-                        coral: { DEFAULT: '#637FC4', dark: '#405EAA' },
-                        sage: '#F5F5F7',
-                        card: '#FFFFFF',
-                        line: '#E3E3E7',
+                        ink: '#2A241E',
+                        emerald: { DEFAULT: '#3D5A80', light: '#6B86A8', deep: '#1E2947' },
+                        coral: { DEFAULT: '#C4A574', dark: '#A88858' },
+                        sage: '#F4EFE6',
+                        card: '#FFFBF5',
+                        line: '#E5D9C8',
                     },
                     fontFamily: {
                         display: ['Fraunces', 'serif'],

@@ -5,69 +5,43 @@
 
 @section('content')
 
-{{-- ============================================================
-     HERO
-     Positioning fix (review #1, #3, #11): lead with what we do and
-     for whom, in one line, then back it with the two-pillar identity
-     instead of a generic "consultancy" label.
-============================================================ --}}
-<section class="relative overflow-hidden">
-    <div class="max-w-[1400px] mx-auto px-5 md:px-8 pt-14 sm:pt-20 pb-16 sm:pb-24 grid lg:grid-cols-[1.1fr_0.9fr] gap-14 items-center">
-        <div>
-            <span class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-emerald mb-6">
-                <span class="w-8 h-px bg-coral"></span> Design. Develop. Manage. Grow.
-            </span>
-            <h1 class="font-display text-[2.6rem] leading-[1.08] sm:text-6xl font-semibold text-ink tracking-tight">
-                Hospitality Solutions for<br class="hidden sm:block">
-                <span class="italic text-emerald">Hotels, Restaurants &amp; Resorts.</span>
-            </h1>
-            <p class="mt-6 text-lg text-ink/70 max-w-xl leading-relaxed">
-                We design, build, improve and manage hospitality businesses across East Africa —
-                from concept development and pre-opening to operational management and commercial growth.
-            </p>
+<section class="relative min-h-[88vh] flex items-end overflow-hidden">
+    <div class="absolute inset-0">
+        <img
+            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=2000&q=80"
+            alt="Sunlit resort terrace overlooking water"
+            class="w-full h-full object-cover"
+        >
+        <div class="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/45 to-ink/15"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-ink/20"></div>
+    </div>
 
-            {{-- Two pillars — this is the identity of the company, stated once, up top --}}
-            <div class="mt-8 grid sm:grid-cols-2 gap-4 max-w-xl">
-                <div class="bg-card border border-line rounded-2xl px-5 py-4">
-                    <p class="font-display text-base font-semibold text-ink">Turnkey Projects</p>
-                    <p class="mt-1 text-xs font-mono uppercase tracking-wide text-ink/50">Design • Build • Equip • Launch</p>
-                </div>
-                <div class="bg-card border border-line rounded-2xl px-5 py-4">
-                    <p class="font-display text-base font-semibold text-ink">Hospitality Management</p>
-                    <p class="mt-1 text-xs font-mono uppercase tracking-wide text-ink/50">Operate • Improve • Grow</p>
-                </div>
-            </div>
-
-            <div class="mt-9 flex flex-wrap items-center gap-4">
-                <a href="#contact" class="inline-flex items-center gap-2 bg-emerald hover:bg-emerald-light text-sage font-semibold px-6 py-3.5 rounded-full transition-colors">
-                    Let's Build Your Hospitality Business
-                </a>
-                <a href="#solutions" class="inline-flex items-center gap-2 text-ink font-semibold px-6 py-3.5 rounded-full border border-line hover:border-emerald hover:text-emerald transition-colors">
-                    See What We Deliver
-                </a>
-            </div>
+    <div class="relative max-w-[1400px] w-full mx-auto px-5 md:px-8 pt-28 pb-16 sm:pb-20">
+        <p class="text-[11px] uppercase tracking-[0.28em] text-coral mb-5">Est. 2022 &middot; A house for houses</p>
+        <h1 class="font-display text-[2.7rem] sm:text-6xl lg:text-7xl font-medium text-sage leading-[1.05] max-w-3xl">
+            We work with you to bring the future of your property <span class="italic">to life.</span>
+        </h1>
+        <p class="mt-6 text-base sm:text-lg text-sage/80 max-w-xl leading-relaxed font-light">
+            From the first sketch to the first guest — Sinel stays at the table.
+            Hotels, restaurants and resorts, opened and kept with care.
+        </p>
+        <div class="mt-9 flex flex-wrap items-center gap-3">
+            <a href="#contact" class="btn btn-gold">Begin with us</a>
+            <a href="#insights" class="btn btn-ghost btn-on-dark">See the houses</a>
         </div>
 
-        <div class="relative">
-            <div class="rounded-[2rem] bg-emerald overflow-hidden relative">
-                <div class="absolute inset-0 bg-gradient-to-br from-emerald via-emerald-deep to-ink/80"></div>
-                <div class="relative p-8 text-sage">
-                    <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-4">Our Approach</p>
-                    <p class="font-display text-xl sm:text-3xl italic leading-snug">
-                        &ldquo;We don't just advise — we build and operate hospitality businesses.&rdquo;
-                    </p>
-
-                    <div class="mt-8 pt-6 border-t border-sage/15">
-                        <p class="font-display text-4xl font-semibold">Founded 2022</p>
-                        <p class="text-sm text-sage/70 mt-1 max-w-sm">
-                            4 years as a company. 50+ years of combined hospitality leadership behind it.
-                        </p>
-                    </div>
-                </div>
+        <div class="mt-14 grid grid-cols-3 gap-6 max-w-lg border-t border-sage/20 pt-6">
+            <div>
+                <p class="font-display text-3xl text-sage italic">20+</p>
+                <p class="mt-1 text-[11px] uppercase tracking-[0.16em] text-sage/60">Properties</p>
             </div>
-            <div class="absolute -bottom-6 -left-6 bg-card border border-line rounded-2xl px-5 py-4 shadow-xl hidden sm:block">
-                <p class="font-mono text-[10px] uppercase tracking-widest text-ink/50">Two Ways We Deliver</p>
-                <p class="font-display text-lg font-semibold text-emerald">Turnkey Projects &amp; Management Solutions</p>
+            <div>
+                <p class="font-display text-3xl text-sage italic">4</p>
+                <p class="mt-1 text-[11px] uppercase tracking-[0.16em] text-sage/60">Countries</p>
+            </div>
+            <div>
+                <p class="font-display text-3xl text-sage italic">2022</p>
+                <p class="mt-1 text-[11px] uppercase tracking-[0.16em] text-sage/60">Founded</p>
             </div>
         </div>
     </div>
@@ -83,16 +57,22 @@
     <div class="max-w-[1400px] mx-auto px-5 md:px-8">
 
         {{-- Bio / Positioning --}}
-        <div class="grid lg:grid-cols-[0.55fr_1fr] gap-14 mb-20">
-            <div class="reveal">
-                <span class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">
-                    <span class="w-8 h-px bg-coral"></span> Who We Are
-                </span>
-                <h2 class="font-display text-4xl sm:text-5xl font-semibold text-ink tracking-tight leading-[1.1]">
-                    A hospitality<br><span class="italic text-emerald">solutions company.</span>
-                </h2>
+        <div class="grid lg:grid-cols-[0.9fr_1.1fr] gap-12 lg:gap-16 items-center mb-20">
+            <div class="reveal photo-frame aspect-[4/5] max-h-[560px]">
+                <img
+                    src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80"
+                    alt="A quietly set hotel dining room"
+                    loading="lazy"
+                >
             </div>
-            <div class="reveal space-y-5 text-ink/70 leading-relaxed">
+            <div class="reveal">
+                <span class="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-coral mb-5">
+                    <span class="w-8 h-px bg-coral"></span> Who we are
+                </span>
+                <h2 class="font-display text-4xl sm:text-5xl font-medium text-ink tracking-tight leading-[1.12]">
+                    A partner in the room,<br><span class="italic text-emerald">not a deck on the table.</span>
+                </h2>
+                <div class="mt-6 space-y-5 text-ink/70 leading-relaxed">
                 <p>
                     Sinel Hospitality is a hospitality solutions company specializing in turnkey hospitality
                     projects and professional management solutions. We partner with hotel owners, investors,
@@ -104,20 +84,21 @@
                     deliver practical solutions that create exceptional guest experiences and sustainable
                     business performance.
                 </p>
+                </div>
             </div>
         </div>
 
         {{-- Vision & Mission --}}
         <div class="grid sm:grid-cols-2 gap-5 mb-20">
-            <div class="reveal bg-card border border-line rounded-3xl p-8">
-                <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-4">Vision</p>
-                <p class="font-display text-xl sm:text-2xl text-ink leading-snug">
+            <div class="reveal bg-card border border-line rounded-xl p-8">
+                <p class="text-[11px] uppercase tracking-[0.22em] text-coral mb-4">Vision</p>
+                <p class="font-display text-2xl sm:text-3xl italic text-ink leading-snug">
                     The best hospitality company in Africa.
                 </p>
             </div>
-            <div class="reveal bg-card border border-line rounded-3xl p-8" style="transition-delay: 80ms">
-                <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-4">Mission</p>
-                <p class="font-display text-xl sm:text-2xl text-ink leading-snug">
+            <div class="reveal bg-card border border-line rounded-xl p-8" style="transition-delay: 80ms">
+                <p class="text-[11px] uppercase tracking-[0.22em] text-coral mb-4">Mission</p>
+                <p class="font-display text-2xl sm:text-3xl italic text-ink leading-snug">
                     Above-average returns through professional management and real partnership.
                 </p>
             </div>
@@ -146,11 +127,15 @@
         </div>
 
         {{-- Purpose --}}
-        <div class="reveal relative rounded-[2rem] overflow-hidden bg-emerald-deep text-sage px-8 py-16 sm:py-20 text-center">
-            <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-6">Our Purpose</p>
-            <p class="font-display text-2xl sm:text-4xl italic leading-snug max-w-3xl mx-auto">
-                &ldquo;Innovative, complete, wholesome hospitality — in a unique, sustainable environment.&rdquo;
-            </p>
+        <div class="reveal relative rounded-xl overflow-hidden min-h-[280px] flex items-center">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1800&q=80" alt="" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-emerald-deep/75"></div>
+            <div class="relative px-8 py-16 sm:py-20 text-center text-sage w-full">
+                <p class="text-[11px] uppercase tracking-[0.22em] text-coral mb-6">Our purpose</p>
+                <p class="font-display text-2xl sm:text-4xl italic leading-snug max-w-3xl mx-auto">
+                    &ldquo;Innovative, complete, wholesome hospitality — in a unique, sustainable environment.&rdquo;
+                </p>
+            </div>
         </div>
     </div>
 </section>
@@ -174,16 +159,15 @@
         @php
             $processSteps = ['Discover', 'Design', 'Build', 'Open', 'Operate', 'Optimize'];
         @endphp
-        <div class="reveal flex flex-wrap items-center gap-3 sm:gap-2">
+        <div class="reveal grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-4">
             @foreach ($processSteps as $i => $step)
-                <span class="inline-flex items-center justify-center bg-card border border-line rounded-full px-5 py-3 font-display text-base sm:text-lg font-semibold text-ink">
-                    {{ $step }}
-                </span>
-                @if (!$loop->last)
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald shrink-0">
-                        <path d="m9 18 6-6-6-6"/>
-                    </svg>
-                @endif
+                <div class="process-step">
+                    <p class="font-display text-3xl italic text-coral">{{ sprintf('%02d', $i + 1) }}</p>
+                    <p class="mt-2 font-display text-xl text-ink">{{ $step }}</p>
+                    @unless($loop->last)
+                        <span class="hidden lg:block absolute top-5 right-0 w-8 h-px bg-line translate-x-1/2"></span>
+                    @endunless
+                </div>
             @endforeach
         </div>
     </div>
@@ -228,7 +212,7 @@
 
         <div class="grid lg:grid-cols-2 gap-6">
             {{-- Turnkey Projects --}}
-            <div class="reveal bg-card border border-line rounded-3xl p-8">
+            <div class="reveal bg-card border border-line rounded-xl p-8">
                 <span class="w-12 h-12 rounded-full bg-emerald/10 flex items-center justify-center">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
                         <polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>
@@ -253,7 +237,7 @@
             </div>
 
             {{-- Management Solutions --}}
-            <div class="reveal bg-card border border-line rounded-3xl p-8" style="transition-delay: 80ms">
+            <div class="reveal bg-card border border-line rounded-xl p-8" style="transition-delay: 80ms">
                 <span class="w-12 h-12 rounded-full bg-emerald/10 flex items-center justify-center">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
                         <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
@@ -399,28 +383,12 @@
      working even before those columns are populated.
 ============================================================ --}}
 <style>
-    #insights .project-row { cursor: pointer; background: transparent; }
-    #insights .project-row .row-number { color: rgba(21,22,26,.35); transition: color .25s ease; }
-    #insights .project-row .row-name { color: rgba(21,22,26,.65); transition: color .25s ease; }
-    #insights .project-row .row-meta { color: rgba(21,22,26,.35); transition: color .25s ease; }
-    #insights .project-row .row-arrow { color: rgba(21,22,26,.25); transition: color .25s ease, transform .25s ease; }
     #insights .project-row.is-active .row-number,
     #insights .project-row:hover .row-number,
-    #insights .project-row:focus-visible .row-number { color: #637FC4; }
-    #insights .project-row.is-active .row-name,
-    #insights .project-row:hover .row-name,
-    #insights .project-row:focus-visible .row-name { color: #15161A; }
-    #insights .project-row.is-active .row-meta,
-    #insights .project-row:hover .row-meta,
-    #insights .project-row:focus-visible .row-meta { color: rgba(21,22,26,.6); }
     #insights .project-row.is-active .row-arrow,
-    #insights .project-row:hover .row-arrow,
-    #insights .project-row:focus-visible .row-arrow { color: #637FC4; transform: translateX(4px); }
-    #insights .project-panel { opacity: 0; z-index: 0; transition: opacity .6s ease; }
-    #insights .project-panel.is-active { opacity: 1; z-index: 1; }
-    @media (prefers-reduced-motion: reduce) {
-        #insights .project-panel { transition: none; }
-    }
+    #insights .project-row:hover .row-arrow { color: #C4A574; }
+    #insights .project-row.is-active .row-name,
+    #insights .project-row:hover .row-name { color: #2A241E; }
 </style>
 <section id="insights" class="py-16 sm:py-20 md:py-24 lg:py-28 bg-sage overflow-hidden">
     <div class="max-w-[1400px] mx-auto px-5 md:px-8">
@@ -430,8 +398,8 @@
                 <span class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">
                     <span class="w-8 h-px bg-coral"></span> Featured Projects
                 </span>
-                <h2 class="font-display text-4xl sm:text-5xl font-semibold text-ink tracking-tight leading-[1.1]">
-                    Real properties.<br><span class="italic text-emerald">Real results.</span>
+                <h2 class="font-display text-4xl sm:text-5xl font-medium text-ink tracking-tight leading-[1.1]">
+                    Houses we keep.<br><span class="italic text-emerald">Guests can feel it.</span>
                 </h2>
             </div>
             <a href="{{ route('projects.index') }}" class="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-ink/70 hover:text-emerald transition-colors">
@@ -602,11 +570,8 @@
             <p class="mt-6 text-lg text-ink/65 leading-relaxed max-w-lg">
                 Our advisory playbooks, turned into property-ready training your team can run from day one.
             </p>
-            <a href="{{ route('academy') }}" class="mt-8 inline-flex items-center gap-2 bg-ink hover:bg-ink/90 text-sage font-semibold px-6 py-3.5 rounded-full transition-colors">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/>
-                </svg>
-                Explore the Academy
+            <a href="{{ route('academy') }}" class="btn btn-primary mt-8">
+                Visit the Academy
             </a>
         </div>
 
@@ -706,8 +671,8 @@
             <span class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">
                 <span class="w-8 h-px bg-coral"></span> Schedule a Discovery Meeting
             </span>
-            <h2 class="font-display text-4xl sm:text-5xl font-semibold tracking-tight leading-[1.1]">
-                Let's build your<br><span class="italic">hospitality business.</span>
+            <h2 class="font-display text-4xl sm:text-5xl font-medium tracking-tight leading-[1.1]">
+                Let's sit down and talk<br><span class="italic">about the house you see.</span>
             </h2>
             <p class="mt-5 text-sage/65 text-lg leading-relaxed">
                 New development or existing property — let's discuss your project directly.
@@ -737,8 +702,8 @@
         </div>
 
         <div class="reveal flex flex-wrap items-center gap-4">
-            <a href="mailto:info@sinelhospitality.com" class="inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white font-semibold px-6 py-3.5 rounded-full transition-colors">
-                Discuss Your Project
+            <a href="mailto:info@sinelhospitality.com" class="btn btn-gold">
+                Write to us
             </a>
             <span class="text-sm text-sage/50 font-mono">Kampala, Uganda — operating across Africa &amp; the Middle East</span>
         </div>

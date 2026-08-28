@@ -1,33 +1,27 @@
-{{-- Sinel Hospitality — Site Footer --}}
-<footer class="bg-emerald-deep text-sage mt-10">
-
-    {{-- CTA banner --}}
+<footer class="bg-emerald-deep text-sage mt-0">
     <div class="border-b border-sage/10">
-        <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-16 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
-            <h2 class="font-display text-3xl sm:text-4xl font-medium italic max-w-xl leading-tight">
-                Let&rsquo;s build the best hospitality company in Africa, together.
-            </h2>
-            <a href="#contact"
-               class="inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white font-semibold px-7 py-3.5 rounded-full transition-colors shrink-0">
-                Book a Consultation
+        <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-16 md:py-20 flex flex-col lg:flex-row items-start lg:items-end justify-between gap-8">
+            <div class="max-w-xl">
+                <p class="text-[11px] uppercase tracking-[0.22em] text-coral mb-4">A partner at the table</p>
+                <h2 class="font-display text-4xl sm:text-5xl italic font-medium leading-[1.15]">
+                    Let us help you bring the house of your future into the world.
+                </h2>
+            </div>
+            <a href="{{ request()->routeIs('home') ? '#contact' : route('home').'#contact' }}"
+               class="btn btn-gold shrink-0">
+                Book a conversation
             </a>
         </div>
     </div>
 
-    {{-- Columns --}}
-    <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-[1.1fr_0.9fr_1fr_1.2fr] gap-12">
-
+    <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1.2fr] gap-12">
         <div>
             <a href="{{ route('home') }}" class="flex items-center gap-3 mb-5">
-                <span class="w-10 h-10 rounded-full bg-sage/10 border border-sage/20 flex items-center justify-center">
-                    <span class="font-display text-base font-semibold">S</span>
-                </span>
-                <span class="font-display text-lg font-semibold">Sinel Hospitality</span>
+                <img src="{{ asset('sinel_logo.png') }}" alt="" class="h-10 w-auto brightness-0 invert opacity-90">
             </a>
-            <p class="text-sage/60 text-sm leading-relaxed max-w-xs">
-                A hospitality consultancy firm delivering hotel &amp; resort management, restaurant
-                management, event planning and personalized itineraries — working toward being the
-                best hospitality company in Africa.
+            <p class="text-sage/65 text-sm leading-relaxed max-w-xs">
+                We design, open and run hotels, restaurants and resorts with the people who own them —
+                quietly, carefully, and for the long stay.
             </p>
             <div class="flex items-center gap-3 mt-6">
                 <a href="https://facebook.com/SinelHospitality" target="_blank" rel="noopener" aria-label="Facebook"
@@ -46,53 +40,44 @@
         </div>
 
         <div>
-            <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">Company</p>
+            <p class="text-[11px] uppercase tracking-[0.2em] text-coral mb-5">The house</p>
             <ul class="space-y-3 text-sm text-sage/75">
-                <li><a href="#about" class="hover:text-sage transition-colors">About Us</a></li>
-                <li><a href="#services" class="hover:text-sage transition-colors">Services</a></li>
-                <li><a href="#why-us" class="hover:text-sage transition-colors">Why Choose Us</a></li>
-                <li><a href="#academy" class="hover:text-sage transition-colors">Academy</a></li>
-                <li><a href="#insights" class="hover:text-sage transition-colors">Insights</a></li>
-                <li><a href="#sustainability" class="hover:text-sage transition-colors">Sustainability</a></li>
+                <li><a href="{{ route('home') }}#about" class="hover:text-sage transition-colors">About</a></li>
+                <li><a href="{{ route('home') }}#solutions" class="hover:text-sage transition-colors">How we work</a></li>
+                <li><a href="{{ route('home') }}#insights" class="hover:text-sage transition-colors">Houses we keep</a></li>
+                <li><a href="{{ route('academy') }}" class="hover:text-sage transition-colors">Academy</a></li>
+                <li><a href="{{ route('home') }}#contact" class="hover:text-sage transition-colors">Visit</a></li>
             </ul>
         </div>
 
         <div>
-            <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">Services</p>
+            <p class="text-[11px] uppercase tracking-[0.2em] text-coral mb-5">Care</p>
             <ul class="space-y-3 text-sm text-sage/75">
-                <li><a href="#services" class="hover:text-sage transition-colors">Property Development</a></li>
-                <li><a href="#services" class="hover:text-sage transition-colors">Design &amp; Construction</a></li>
-                <li><a href="#services" class="hover:text-sage transition-colors">Recruitment &amp; Training</a></li>
-                <li><a href="#services" class="hover:text-sage transition-colors">Operations</a></li>
-                <li><a href="#services" class="hover:text-sage transition-colors">Sales &amp; Marketing</a></li>
+                <li><a href="{{ route('home') }}#solutions" class="hover:text-sage transition-colors">Turnkey projects</a></li>
+                <li><a href="{{ route('home') }}#solutions" class="hover:text-sage transition-colors">Management</a></li>
+                <li><a href="{{ route('home') }}#sustainability" class="hover:text-sage transition-colors">Sustainability</a></li>
             </ul>
         </div>
 
         <div>
-            <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">Contact</p>
+            <p class="text-[11px] uppercase tracking-[0.2em] text-coral mb-5">Concierge</p>
             <ul class="space-y-4 text-sm text-sage/75">
                 <li>
                     <p class="text-sage font-medium">Nelson Besigye</p>
-                    <a href="tel:+256772902188" class="block hover:text-sage transition-colors">+256 772 902 188</a>
-                    <a href="mailto:nelson@sinelhospitality.com" class="block hover:text-sage transition-colors">nelson@sinelhospitality.com</a>
+                    <a href="tel:+256772902188" class="block hover:text-coral transition-colors">+256 772 902 188</a>
                 </li>
                 <li>
                     <p class="text-sage font-medium">Simon Ateesa</p>
-                    <a href="tel:+256774058752" class="block hover:text-sage transition-colors">+256 774 058 752</a>
-                    <a href="mailto:simon@sinelhospitality.com" class="block hover:text-sage transition-colors">simon@sinelhospitality.com</a>
-                </li>
-                <li class="pt-1 border-t border-sage/10">
-                    <span>Kampala, Uganda — operating across Africa &amp; the Middle East</span>
+                    <a href="tel:+256774058752" class="block hover:text-coral transition-colors">+256 774 058 752</a>
                 </li>
             </ul>
         </div>
     </div>
 
-    {{-- Bottom bar --}}
     <div class="border-t border-sage/10">
-        <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-sage/50">
-            <p>&copy; {{ now()->year }} Sinel Hospitality. All rights reserved.</p>
-            <p class="font-mono">www.sinelhospitality.com</p>
+        <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-sage/50 tracking-wide">
+            <p>&copy; {{ now()->year }} Sinel Hospitality. Site by Cirqco Systems.</p>
+            <p>Est. 2022 &middot; Kampala</p>
         </div>
     </div>
 </footer>

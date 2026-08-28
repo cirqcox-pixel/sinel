@@ -8,27 +8,24 @@
 {{-- ============================================================
      ACADEMY — HERO
 ============================================================ --}}
-<section class="relative overflow-hidden bg-emerald-deep text-sage">
-    <div class="max-w-[1400px] mx-auto px-5 md:px-8 pt-20 pb-20 sm:pb-24">
-        <a href="{{ route('home') }}#academy" class="inline-flex items-center gap-2 text-sm text-sage/60 hover:text-coral transition-colors mb-10">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+<section class="relative overflow-hidden min-h-[70vh] flex items-end">
+    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2000&q=80" alt="Resort morning light" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/40 to-ink/25"></div>
+    <div class="relative max-w-[1400px] mx-auto px-5 md:px-8 pt-28 pb-16 sm:pb-20">
+        <a href="{{ route('home') }}#academy" class="inline-flex items-center gap-2 text-sm text-sage/70 hover:text-coral transition-colors mb-8">
             Back to home
         </a>
-
-        <span class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-coral mb-6">
+        <span class="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-coral mb-5">
             <span class="w-8 h-px bg-coral"></span> Sinel Academy
         </span>
-        <h1 class="font-display text-[2.4rem] leading-[1.08] sm:text-6xl font-semibold tracking-tight max-w-3xl">
-            Where hospitality talent<br class="hidden sm:block"> <span class="italic">is built, not just hired.</span>
+        <h1 class="font-display text-[2.4rem] leading-[1.08] sm:text-6xl font-medium tracking-tight max-w-3xl text-sage">
+            Where hospitality talent<br class="hidden sm:block"> <span class="italic">is grown, not just hired.</span>
         </h1>
-        <p class="mt-6 text-lg text-sage/70 max-w-xl leading-relaxed">
-            Sinel Academy turns our advisory playbooks into structured, property-ready training —
-            so your team doesn't just learn the standard, they can run it from day one.
+        <p class="mt-6 text-lg text-sage/75 max-w-xl leading-relaxed font-light">
+            Our operating playbooks, taught at the property — so your team can run the house from day one.
         </p>
-        <div class="mt-9 flex flex-wrap items-center gap-4">
-            <a href="#apply" class="inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white font-semibold px-6 py-3.5 rounded-full transition-colors">
-                Enquire About a Cohort
-            </a>
+        <div class="mt-9">
+            <a href="#apply" class="btn btn-gold">Enquire about a cohort</a>
         </div>
     </div>
 </section>
@@ -152,7 +149,7 @@
             e.g. Route::post('/academy/enquire', [AcademyEnquiryController::class, 'store']).
         --}}
         <a href="mailto:train@sinelhospitality.com?subject=Sinel%20Academy%20Enquiry"
-           class="inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white font-semibold px-6 py-3.5 rounded-full transition-colors">
+           class="btn btn-gold">
             Email Sinel Academy
         </a>
         <p class="mt-4 text-sm text-sage/50">Or call +256 200 902 188.</p>

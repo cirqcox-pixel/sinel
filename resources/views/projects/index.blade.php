@@ -15,8 +15,8 @@
         <span class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">
             <span class="w-8 h-px bg-coral"></span> Insights
         </span>
-        <h1 class="font-display text-4xl sm:text-5xl font-semibold text-ink tracking-tight leading-[1.1] mb-14">
-            All projects.
+        <h1 class="font-display text-4xl sm:text-6xl font-medium italic text-ink tracking-tight leading-[1.1] mb-14">
+            The houses.
         </h1>
 
         @if ($projects->isEmpty())
@@ -27,7 +27,7 @@
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 @foreach ($projects as $project)
                     <a href="{{ route('projects.show', $project) }}"
-                       class="group relative aspect-[4/5] rounded-3xl overflow-hidden reveal"
+                       class="group relative aspect-[4/5] rounded-xl overflow-hidden reveal photo-frame"
                        @unless($project->cover_image_url) style="background: linear-gradient(160deg, {{ $project->color_from }}, {{ $project->color_to }});" @endunless>
                         @if ($project->cover_image_url)
                             <img src="{{ $project->cover_image_url }}" alt="{{ $project->title }}" class="absolute inset-0 w-full h-full object-cover">

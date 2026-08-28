@@ -7,24 +7,24 @@
     <link rel="icon" href="{{ asset('sinel_logo.png') }}" sizes="any">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        ink: '#15161A',
-                        emerald: { DEFAULT: '#4D69B1', light: '#8599CA', deep: '#1E2947' },
-                        coral: { DEFAULT: '#637FC4', dark: '#405EAA' },
-                        sage: '#F5F5F7',
-                        card: '#FFFFFF',
-                        line: '#E3E3E7',
+                        ink: '#2A241E',
+                        emerald: { DEFAULT: '#3D5A80', light: '#6B86A8', deep: '#1E2947' },
+                        coral: { DEFAULT: '#C4A574', dark: '#A88858' },
+                        sage: '#F4EFE6',
+                        card: '#FFFBF5',
+                        line: '#E5D9C8',
                     },
                     fontFamily: {
-                        display: ['Fraunces', 'serif'],
-                        body: ['Inter', 'sans-serif'],
-                        mono: ['"IBM Plex Mono"', 'monospace'],
+                        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        body: ['Outfit', 'sans-serif'],
+                        mono: ['Outfit', 'sans-serif'],
                     },
                 },
             },
@@ -37,7 +37,8 @@
 
     {{-- Brand panel --}}
     <div class="hidden lg:flex flex-col justify-between bg-emerald-deep text-sage p-12 relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-br from-emerald via-emerald-deep to-ink/80"></div>
+        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1400&q=80" alt="" class="absolute inset-0 w-full h-full object-cover opacity-40">
+        <div class="absolute inset-0 bg-gradient-to-t from-emerald-deep via-emerald-deep/70 to-emerald-deep/40"></div>
         <div class="relative">
             <a href="{{ route('home') }}" class="flex items-center gap-3">
                 <span class="w-10 h-10 rounded-full bg-sage/10 border border-sage/20 flex items-center justify-center font-display font-semibold">S</span>

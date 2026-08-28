@@ -8,40 +8,27 @@
 
     <link rel="icon" href="{{ asset('sinel_logo.png') }}" sizes="any">
 
-    {{-- Fonts: Fraunces (display), Inter (body), IBM Plex Mono (utility) --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    {{--
-        Tailwind via CDN — no Node/Vite build step required, works on plain
-        cPanel/shared hosting. If you later move to a proper asset build
-        (npm + Vite/Mix), swap this block for @vite(...) and reuse the same
-        tailwind.config.js tokens shipped alongside this layout.
-
-        Color tokens are named generically (emerald/coral/sage) so template
-        markup never has to change — only the hex values below do. Current
-        values are the real Sinel Hospitality brand colors: brand blue,
-        near-black, and an off-white/light-gray background, taken from the
-        2022 Company Profile.
-    --}}
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        ink: '#15161A',
-                        emerald: { DEFAULT: '#4D69B1', light: '#8599CA', deep: '#1E2947' },
-                        coral: { DEFAULT: '#637FC4', dark: '#405EAA' },
-                        sage: '#F5F5F7',
-                        card: '#FFFFFF',
-                        line: '#E3E3E7',
+                        ink: '#2A241E',
+                        emerald: { DEFAULT: '#3D5A80', light: '#6B86A8', deep: '#1E2947' },
+                        coral: { DEFAULT: '#C4A574', dark: '#A88858' },
+                        sage: '#F4EFE6',
+                        card: '#FFFBF5',
+                        line: '#E5D9C8',
                     },
                     fontFamily: {
-                        display: ['Fraunces', 'serif'],
-                        body: ['Inter', 'sans-serif'],
-                        mono: ['"IBM Plex Mono"', 'monospace'],
+                        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        body: ['Outfit', 'sans-serif'],
+                        mono: ['Outfit', 'sans-serif'],
                     },
                 },
             },
