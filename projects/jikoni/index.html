@@ -8,29 +8,27 @@
 
     <link rel="icon" href="https://cirqcox-pixel.github.io/sinel/sinel_logo.png" sizes="any">
 
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        ink: '#15161A',
-                        emerald: { DEFAULT: '#4D69B1', light: '#8599CA', deep: '#1E2947' },
-                        coral: { DEFAULT: '#637FC4', dark: '#405EAA' },
-                        sage: '#F5F5F7',
-                        card: '#FFFFFF',
-                        line: '#E3E3E7',
+                        ink: '#2A241E',
+                        emerald: { DEFAULT: '#3D5A80', light: '#6B86A8', deep: '#1E2947' },
+                        coral: { DEFAULT: '#C4A574', dark: '#A88858' },
+                        sage: '#F4EFE6',
+                        card: '#FFFBF5',
+                        line: '#E5D9C8',
                     },
                     fontFamily: {
-                        display: ['Fraunces', 'serif'],
-                        body: ['Inter', 'sans-serif'],
-                        mono: ['"IBM Plex Mono"', 'monospace'],
+                        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        body: ['Outfit', 'sans-serif'],
+                        mono: ['Outfit', 'sans-serif'],
                     },
                 },
             },
@@ -43,84 +41,47 @@
     </head>
 <body class="antialiased bg-sage text-ink font-body">
 
-    <header class="sticky top-0 z-50">
-
-    
-    <div class="bg-emerald text-sage/90 overflow-hidden border-b border-emerald-light/40">
-        <div class="max-w-[1400px] mx-auto flex items-center justify-between px-5 md:px-8 h-9 text-xs font-mono tracking-wide">
-            <div class="hidden sm:flex items-center overflow-hidden w-full" aria-hidden="true">
-                <div class="ticker-track">
-                                                                <span class="mx-6">TURNKEY PROJECTS</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">HOSPITALITY MANAGEMENT</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">DESIGN &amp; BUILD</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">PRE-OPENING &amp; LAUNCH</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">REVENUE MANAGEMENT</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">STAFF TRAINING</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">ASSET MANAGEMENT</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">QUALITY AUDITS</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">TURNKEY PROJECTS</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">HOSPITALITY MANAGEMENT</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">DESIGN &amp; BUILD</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">PRE-OPENING &amp; LAUNCH</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">REVENUE MANAGEMENT</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">STAFF TRAINING</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">ASSET MANAGEMENT</span><span class="text-coral">&middot;</span>
-                                            <span class="mx-6">QUALITY AUDITS</span><span class="text-coral">&middot;</span>
-                                    </div>
-            </div>
-            <p class="flex sm:hidden items-center gap-1 font-mono text-[11px]">THE BEST HOSPITALITY COMPANY IN AFRICA</p>
-            <a href="mailto:info@sinelhospitality.com" class="hidden md:inline-block shrink-0 pl-6 hover:text-coral transition-colors">
-                info@sinelhospitality.com
-            </a>
-        </div>
-    </div>
-
-    
-    <div class="bg-sage/95 backdrop-blur border-b border-line">
-        <div class="max-w-[1400px] mx-auto flex items-center justify-between px-5 md:px-8 h-20">
+    <header class="site-header sticky top-0 z-50">
+    <div class="site-header-bar bg-sage/90 backdrop-blur-md border-b border-line/80">
+        <div class="max-w-[1400px] mx-auto flex items-center justify-between px-5 md:px-8 h-[4.75rem]">
 
             <a href="https://cirqcox-pixel.github.io/sinel/" class="flex items-center gap-3 group">
-                
-                <img src="https://cirqcox-pixel.github.io/sinel/sinel_logo.png" alt="Sinel Hospitality" class="h-12 w-auto shrink-0">
+                <img src="https://cirqcox-pixel.github.io/sinel/sinel_logo.png" alt="Sinel Hospitality" class="h-11 w-auto shrink-0">
             </a>
 
-            <nav class="hidden lg:flex items-center gap-9 font-medium text-[15px] text-ink/80" aria-label="Primary">
+            <nav class="hidden lg:flex items-center gap-8 text-[13px] tracking-[0.04em] text-ink/70" aria-label="Primary">
                                                     <a href="https://cirqcox-pixel.github.io/sinel/"
-                       class="nav-link transition-colors hover:text-emerald">
+                       class="nav-link hover:text-ink">
                         Home
                     </a>
-                                    <a href="#about"
-                       class="nav-link transition-colors hover:text-emerald">
+                                    <a href="https://cirqcox-pixel.github.io/sinel/#about"
+                       class="nav-link hover:text-ink">
                         About
                     </a>
-                                    <a href="#solutions"
-                       class="nav-link transition-colors hover:text-emerald">
-                        Solutions
+                                    <a href="https://cirqcox-pixel.github.io/sinel/#solutions"
+                       class="nav-link hover:text-ink">
+                        Work
                     </a>
-                                    <a href="#why-us"
-                       class="nav-link transition-colors hover:text-emerald">
-                        Why Us
+                                    <a href="https://cirqcox-pixel.github.io/sinel/#insights"
+                       class="nav-link hover:text-ink">
+                        Houses
                     </a>
-                                    <a href="#insights"
-                       class="nav-link transition-colors hover:text-emerald">
-                        Insights
-                    </a>
-                                    <a href="#academy"
-                       class="nav-link transition-colors hover:text-emerald">
+                                    <a href="https://cirqcox-pixel.github.io/sinel/academy/"
+                       class="nav-link hover:text-ink">
                         Academy
                     </a>
-                                    <a href="#contact"
-                       class="nav-link transition-colors hover:text-emerald">
-                        Contact
+                                    <a href="https://cirqcox-pixel.github.io/sinel/#contact"
+                       class="nav-link hover:text-ink">
+                        Visit
                     </a>
                             </nav>
 
             <div class="flex items-center gap-3">
 
                 
-                <a href="#contact"
-                   class="hidden lg:inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors">
-                    Discuss Your Project
+                <a href="https://cirqcox-pixel.github.io/sinel/#contact"
+                   class="btn btn-primary hidden lg:inline-flex">
+                    Start a conversation
                 </a>
 
                 <button type="button"
@@ -128,45 +89,43 @@
                         aria-label="Open menu"
                         aria-expanded="false"
                         aria-controls="mobileMenu"
-                        class="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 rounded-full border border-line">
-                    <span class="block w-5 h-[2px] bg-ink"></span>
-                    <span class="block w-5 h-[2px] bg-ink"></span>
+                        class="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 rounded border border-line">
+                    <span class="block w-5 h-[1.5px] bg-ink"></span>
+                    <span class="block w-5 h-[1.5px] bg-ink"></span>
                 </button>
             </div>
         </div>
     </div>
 
-    
     <div id="mobileMenu"
-         class="mobile-menu fixed top-0 right-0 h-full w-[82%] max-w-sm bg-emerald text-sage z-[60] shadow-2xl px-7 pt-7 pb-10 flex flex-col"
+         class="mobile-menu fixed top-0 right-0 h-full w-[82%] max-w-sm bg-emerald-deep text-sage z-[60] shadow-2xl px-7 pt-7 pb-10 flex flex-col"
          role="dialog" aria-modal="true" aria-label="Mobile navigation">
         <div class="flex items-center justify-between mb-10">
-            <span class="font-display text-lg font-semibold">Sinel Hospitality</span>
+            <span class="font-display text-2xl italic">Sinel</span>
             <button type="button" id="menuClose" aria-label="Close menu"
-                    class="w-9 h-9 rounded-full border border-sage/30 flex items-center justify-center">
-                <span class="block w-4 h-[2px] bg-sage rotate-45 relative top-[1px]"></span>
-                <span class="block w-4 h-[2px] bg-sage -rotate-45 relative -left-4"></span>
+                    class="w-9 h-9 rounded border border-sage/20 flex items-center justify-center text-sage">
+                &times;
             </button>
         </div>
-        <nav class="flex flex-col gap-6 font-display text-2xl" aria-label="Mobile primary">
+        <nav class="flex flex-col gap-5 font-display text-3xl italic" aria-label="Mobile primary">
                             <a href="https://cirqcox-pixel.github.io/sinel/" class="hover:text-coral transition-colors">Home</a>
-                            <a href="#about" class="hover:text-coral transition-colors">About</a>
-                            <a href="#solutions" class="hover:text-coral transition-colors">Solutions</a>
-                            <a href="#why-us" class="hover:text-coral transition-colors">Why Us</a>
-                            <a href="#insights" class="hover:text-coral transition-colors">Insights</a>
-                            <a href="#academy" class="hover:text-coral transition-colors">Academy</a>
-                            <a href="#contact" class="hover:text-coral transition-colors">Contact</a>
+                            <a href="https://cirqcox-pixel.github.io/sinel/#about" class="hover:text-coral transition-colors">About</a>
+                            <a href="https://cirqcox-pixel.github.io/sinel/#solutions" class="hover:text-coral transition-colors">Work</a>
+                            <a href="https://cirqcox-pixel.github.io/sinel/#insights" class="hover:text-coral transition-colors">Houses</a>
+                            <a href="https://cirqcox-pixel.github.io/sinel/academy/" class="hover:text-coral transition-colors">Academy</a>
+                            <a href="https://cirqcox-pixel.github.io/sinel/#contact" class="hover:text-coral transition-colors">Visit</a>
                     </nav>
 
         <div class="mt-10 pt-6 border-t border-sage/15">
                     </div>
 
-        <a href="#contact" class="mt-6 inline-flex justify-center items-center gap-2 bg-coral text-white font-semibold px-5 py-3 rounded-full">
-            Discuss Your Project
+        <a href="https://cirqcox-pixel.github.io/sinel/#contact" class="btn btn-gold mt-auto">
+            Start a conversation
         </a>
     </div>
-    <div id="menuOverlay" class="fixed inset-0 bg-ink/50 z-[55] hidden"></div>
+    <div id="menuOverlay" class="fixed inset-0 bg-ink/40 z-[55] hidden"></div>
 </header>
+
     <main>
         
 <section class="relative overflow-hidden">
@@ -222,7 +181,7 @@
             <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-8">More Projects</p>
             <div class="grid sm:grid-cols-3 gap-6">
                                     <a href="https://cirqcox-pixel.github.io/sinel/projects/masheda/"
-                       class="group relative aspect-[4/5] rounded-3xl overflow-hidden"
+                       class="group relative aspect-[4/5] rounded-xl overflow-hidden"
                        >
                                                     <img src="https://cirqcox-pixel.github.io/sinel/storage/projects/OXhbsQmKbpSr4PAc3kHFT8goUIaryJhjrVxkLfi9.jpg" alt="Masheda Palms Resort" class="absolute inset-0 w-full h-full object-cover">
                                                 <div class="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent"></div>
@@ -232,7 +191,7 @@
                         </div>
                     </a>
                                     <a href="https://cirqcox-pixel.github.io/sinel/projects/biaexauce/"
-                       class="group relative aspect-[4/5] rounded-3xl overflow-hidden"
+                       class="group relative aspect-[4/5] rounded-xl overflow-hidden"
                        >
                                                     <img src="https://cirqcox-pixel.github.io/sinel/storage/projects/fGDkOHw5agtLdkkUpdogFpUN7vxBNQXOh41fgJkE.jpg" alt="Hotel BiaExauce" class="absolute inset-0 w-full h-full object-cover">
                                                 <div class="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent"></div>
@@ -242,7 +201,7 @@
                         </div>
                     </a>
                                     <a href="https://cirqcox-pixel.github.io/sinel/projects/villa-bellator/"
-                       class="group relative aspect-[4/5] rounded-3xl overflow-hidden"
+                       class="group relative aspect-[4/5] rounded-xl overflow-hidden"
                        >
                                                     <img src="https://cirqcox-pixel.github.io/sinel/storage/projects/M0lZAVvAV3MxSWFFd4olisyHPxENi0rOLLAUi4Yv.jpg" alt="Villa Bellator" class="absolute inset-0 w-full h-full object-cover">
                                                 <div class="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent"></div>
@@ -256,35 +215,30 @@
     </section>
     </main>
 
-    <footer class="bg-emerald-deep text-sage mt-10">
-
-    
+    <footer class="bg-emerald-deep text-sage mt-0">
     <div class="border-b border-sage/10">
-        <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-16 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
-            <h2 class="font-display text-3xl sm:text-4xl font-medium italic max-w-xl leading-tight">
-                Let&rsquo;s build the best hospitality company in Africa, together.
-            </h2>
-            <a href="#contact"
-               class="inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white font-semibold px-7 py-3.5 rounded-full transition-colors shrink-0">
-                Book a Consultation
+        <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-16 md:py-20 flex flex-col lg:flex-row items-start lg:items-end justify-between gap-8">
+            <div class="max-w-xl">
+                <p class="text-[11px] uppercase tracking-[0.22em] text-coral mb-4">A partner at the table</p>
+                <h2 class="font-display text-4xl sm:text-5xl italic font-medium leading-[1.15]">
+                    Let us help you bring the house of your future into the world.
+                </h2>
+            </div>
+            <a href="https://cirqcox-pixel.github.io/sinel/#contact"
+               class="btn btn-gold shrink-0">
+                Book a conversation
             </a>
         </div>
     </div>
 
-    
-    <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-[1.1fr_0.9fr_1fr_1.2fr] gap-12">
-
+    <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1.2fr] gap-12">
         <div>
             <a href="https://cirqcox-pixel.github.io/sinel/" class="flex items-center gap-3 mb-5">
-                <span class="w-10 h-10 rounded-full bg-sage/10 border border-sage/20 flex items-center justify-center">
-                    <span class="font-display text-base font-semibold">S</span>
-                </span>
-                <span class="font-display text-lg font-semibold">Sinel Hospitality</span>
+                <img src="https://cirqcox-pixel.github.io/sinel/sinel_logo.png" alt="" class="h-10 w-auto brightness-0 invert opacity-90">
             </a>
-            <p class="text-sage/60 text-sm leading-relaxed max-w-xs">
-                A hospitality consultancy firm delivering hotel &amp; resort management, restaurant
-                management, event planning and personalized itineraries — working toward being the
-                best hospitality company in Africa.
+            <p class="text-sage/65 text-sm leading-relaxed max-w-xs">
+                We design, open and run hotels, restaurants and resorts with the people who own them —
+                quietly, carefully, and for the long stay.
             </p>
             <div class="flex items-center gap-3 mt-6">
                 <a href="https://facebook.com/SinelHospitality" target="_blank" rel="noopener" aria-label="Facebook"
@@ -303,56 +257,48 @@
         </div>
 
         <div>
-            <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">Company</p>
+            <p class="text-[11px] uppercase tracking-[0.2em] text-coral mb-5">The house</p>
             <ul class="space-y-3 text-sm text-sage/75">
-                <li><a href="#about" class="hover:text-sage transition-colors">About Us</a></li>
-                <li><a href="#services" class="hover:text-sage transition-colors">Services</a></li>
-                <li><a href="#why-us" class="hover:text-sage transition-colors">Why Choose Us</a></li>
-                <li><a href="#academy" class="hover:text-sage transition-colors">Academy</a></li>
-                <li><a href="#insights" class="hover:text-sage transition-colors">Insights</a></li>
-                <li><a href="#sustainability" class="hover:text-sage transition-colors">Sustainability</a></li>
+                <li><a href="https://cirqcox-pixel.github.io/sinel/#about" class="hover:text-sage transition-colors">About</a></li>
+                <li><a href="https://cirqcox-pixel.github.io/sinel/#solutions" class="hover:text-sage transition-colors">How we work</a></li>
+                <li><a href="https://cirqcox-pixel.github.io/sinel/#insights" class="hover:text-sage transition-colors">Houses we keep</a></li>
+                <li><a href="https://cirqcox-pixel.github.io/sinel/academy/" class="hover:text-sage transition-colors">Academy</a></li>
+                <li><a href="https://cirqcox-pixel.github.io/sinel/#contact" class="hover:text-sage transition-colors">Visit</a></li>
             </ul>
         </div>
 
         <div>
-            <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">Services</p>
+            <p class="text-[11px] uppercase tracking-[0.2em] text-coral mb-5">Care</p>
             <ul class="space-y-3 text-sm text-sage/75">
-                <li><a href="#services" class="hover:text-sage transition-colors">Property Development</a></li>
-                <li><a href="#services" class="hover:text-sage transition-colors">Design &amp; Construction</a></li>
-                <li><a href="#services" class="hover:text-sage transition-colors">Recruitment &amp; Training</a></li>
-                <li><a href="#services" class="hover:text-sage transition-colors">Operations</a></li>
-                <li><a href="#services" class="hover:text-sage transition-colors">Sales &amp; Marketing</a></li>
+                <li><a href="https://cirqcox-pixel.github.io/sinel/#solutions" class="hover:text-sage transition-colors">Turnkey projects</a></li>
+                <li><a href="https://cirqcox-pixel.github.io/sinel/#solutions" class="hover:text-sage transition-colors">Management</a></li>
+                <li><a href="https://cirqcox-pixel.github.io/sinel/#sustainability" class="hover:text-sage transition-colors">Sustainability</a></li>
             </ul>
         </div>
 
         <div>
-            <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">Contact</p>
+            <p class="text-[11px] uppercase tracking-[0.2em] text-coral mb-5">Concierge</p>
             <ul class="space-y-4 text-sm text-sage/75">
                 <li>
                     <p class="text-sage font-medium">Nelson Besigye</p>
-                    <a href="tel:+256772902188" class="block hover:text-sage transition-colors">+256 772 902 188</a>
-                    <a href="mailto:nelson@sinelhospitality.com" class="block hover:text-sage transition-colors">nelson@sinelhospitality.com</a>
+                    <a href="tel:+256772902188" class="block hover:text-coral transition-colors">+256 772 902 188</a>
                 </li>
                 <li>
                     <p class="text-sage font-medium">Simon Ateesa</p>
-                    <a href="tel:+256774058752" class="block hover:text-sage transition-colors">+256 774 058 752</a>
-                    <a href="mailto:simon@sinelhospitality.com" class="block hover:text-sage transition-colors">simon@sinelhospitality.com</a>
-                </li>
-                <li class="pt-1 border-t border-sage/10">
-                    <span>Kampala, Uganda — operating across Africa &amp; the Middle East</span>
+                    <a href="tel:+256774058752" class="block hover:text-coral transition-colors">+256 774 058 752</a>
                 </li>
             </ul>
         </div>
     </div>
 
-    
     <div class="border-t border-sage/10">
-        <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-sage/50">
-            <p>&copy; 2026 Sinel Hospitality. All rights reserved.</p>
-            <p class="font-mono">www.sinelhospitality.com</p>
+        <div class="max-w-[1400px] mx-auto px-5 md:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-sage/50 tracking-wide">
+            <p>&copy; 2026 Sinel Hospitality. Site by Cirqco Systems.</p>
+            <p>Est. 2022 &middot; Kampala</p>
         </div>
     </div>
 </footer>
+
     
     <script src="https://cirqcox-pixel.github.io/sinel/js/site.js" defer></script>
 
