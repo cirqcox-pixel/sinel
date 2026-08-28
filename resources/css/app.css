@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Utility ticker (header) ---------- */
+.ticker-track {
+    display: inline-flex;
+    animation: ticker 28s linear infinite;
+    white-space: nowrap;
+}
+@keyframes ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .ticker-track { animation: none; }
+}
+
+/* ---------- Nav underline hover ---------- */
+.nav-link { position: relative; }
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -4px;
+    width: 0; height: 2px;
+    background: theme('colors.coral.DEFAULT');
+    transition: width .25s ease;
+}
+.nav-link:hover::after,
+.nav-link:focus-visible::after { width: 100%; }
+
+/* ---------- Mobile off-canvas menu ---------- */
+.mobile-menu {
+    transform: translateX(100%);
+    transition: transform .35s ease;
+}
+.mobile-menu.open { transform: translateX(0); }
+
+/* ---------- Focus visibility ---------- */
+a:focus-visible, button:focus-visible {
+    outline: 2px solid theme('colors.coral.DEFAULT');
+    outline-offset: 3px;
+}
