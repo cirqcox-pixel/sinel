@@ -39,9 +39,10 @@
     <div class="bg-emerald-deep text-sage rounded-3xl p-8">
         <p class="font-mono text-xs uppercase tracking-[0.2em] text-coral mb-3">Interested in a cohort?</p>
         <p class="font-display text-xl italic mb-5 max-w-md">Reach out and we'll let you know when the next one opens near you.</p>
-        <a href="mailto:nelson@sinelhospitality.com?subject=Academy%20Cohort%20Interest"
+        <a href="https://wa.me/256772902188?text=Hello%2C%20I%27m%20interested%20in%20a%20Sinel%20Academy%20cohort."
+           target="_blank" rel="noopener"
            class="inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white font-semibold px-5 py-2.5 rounded-full transition-colors text-sm">
-            Email Us
+            WhatsApp Us
         </a>
     </div>
 @endsection

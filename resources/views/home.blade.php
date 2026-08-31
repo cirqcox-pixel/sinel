@@ -709,8 +709,8 @@
         </div>
 
         <div class="reveal flex flex-wrap items-center gap-4">
-            <a href="mailto:info@sinelhospitality.com" class="btn btn-gold">
-                Write to us
+            <a href="https://wa.me/256772902188" target="_blank" rel="noopener" class="btn btn-gold">
+                WhatsApp us
             </a>
             <span class="text-sm text-sage/50 font-mono">Kampala, Uganda — operating across Africa &amp; the Middle East</span>
         </div>

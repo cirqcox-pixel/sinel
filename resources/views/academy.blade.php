@@ -143,14 +143,10 @@
             Bring a cohort to your property.
         </h2>
 
-        {{--
-            Simple mailto-based enquiry for now. Wire this to a real
-            Enquiry model / mail notification once the backend is ready —
-            e.g. Route::post('/academy/enquire', [AcademyEnquiryController::class, 'store']).
-        --}}
-        <a href="mailto:train@sinelhospitality.com?subject=Sinel%20Academy%20Enquiry"
+        <a href="https://wa.me/256772902188?text=Hello%20Sinel%20Academy%2C%20I%27d%20like%20to%20enquire%20about%20a%20cohort."
+           target="_blank" rel="noopener"
            class="btn btn-gold">
-            Email Sinel Academy
+            WhatsApp Sinel Academy
         </a>
         <p class="mt-4 text-sm text-sage/50">Or call +256 200 902 188.</p>
     </div>
