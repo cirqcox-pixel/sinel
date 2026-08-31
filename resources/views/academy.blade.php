@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Sinel Academy — Hospitality Training | Sinel Hospitality')
-@section('meta_description', 'Sinel Academy turns Sinel Hospitality\'s advisory playbooks into structured, property-ready training for hotel, resort and restaurant teams across East Africa.')
+@section('title', 'Sinel Academy — Hotel Staff Training Uganda & East Africa | Sinel Hospitality')
+@section('meta_description', 'Sinel Academy trains hotel, resort and restaurant teams across East Africa using Sinel Hospitality operating playbooks — for properties such as Masheda Palms, Jikoni, Wilsen Hotel and partner hotels in Uganda and the DRC.')
 
 @section('content')
 

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Sinel Hospitality — The Best Hospitality Company in Africa')</title>
-    <meta name="description" content="@yield('meta_description', 'Sinel Hospitality is a hospitality consultancy firm delivering hotel & resort management, restaurant management, event planning and personalized itineraries across Africa.')">
+    <title>@yield('title', 'Sinel Hospitality — Hotel & Resort Management in East Africa')</title>
+    <meta name="description" content="@yield('meta_description', 'Sinel Hospitality designs, opens and manages hotels, resorts and restaurants across East Africa — including Masheda Palms, Karibu, Serena Hotel Kigo, Alure Hotel and Suites, Hotel Bia-Exauce, Jikoni, Villa Bellator, Wilsen Hotel and Robyson Residency Kinshasa.')">
+    @include('partials.seo')
 
     <link rel="icon" href="{{ asset('sinel_logo.png') }}" sizes="any">
 

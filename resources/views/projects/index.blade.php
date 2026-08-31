@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Projects — Sinel Hospitality')
-@section('meta_description', 'A directory of hotel, resort and residence projects managed by Sinel Hospitality across Africa.')
+@section('title', 'Projects — Masheda Palms, Jikoni, Karibu, Serena Kigo | Sinel Hospitality')
+@section('meta_description', 'Hotels and restaurants Sinel Hospitality has worked with: Karibu, Serena Hotel Kigo, Masheda Palms Resort, Alure Hotel and Suites, Hotel Bia-Exauce in Congo, Jikoni Restaurant, Villa Bellator, Wilsen Hotel and Robyson Residency Kinshasa.')
 
 @section('content')
 <section class="py-16 sm:py-20 md:py-24">

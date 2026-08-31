@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Sinel Hospitality — Hospitality Solutions Company | Turnkey Projects & Management Solutions')
-@section('meta_description', 'Sinel Hospitality is a hospitality solutions company specializing in turnkey hospitality projects and professional management solutions across East Africa — from concept to operations.')
+@section('title', 'Sinel Hospitality — Hotel Management Uganda, DRC & East Africa')
+@section('meta_description', 'Sinel Hospitality designs, opens and manages hotels and restaurants across East Africa. Portfolio includes Masheda Palms Resort, Karibu, Serena Hotel Kigo, Alure Hotel and Suites, Hotel Bia-Exauce in Congo, Jikoni Restaurant, Villa Bellator, Wilsen Hotel and Robyson Residency Kinshasa.')
+@section('meta_keywords', 'Sinel Hospitality, hotel management Kampala, hotel management Uganda, hospitality consultancy DRC, Masheda Palms Resort Buyala, Karibu hotel, Serena Hotel Kigo, Lake Victoria Serena Kigo, Alure Hotel and Suites, Hotel Bia-Exauce Ariwara Congo, Hotel BiaExauce, Jikoni Restaurant Kampala, Villa Bellator Seguku, Wilsen Hotel Nansana Kasubi, Robyson Residency Kinshasa, turnkey hospitality projects')
 
 @section('content')
 
@@ -548,6 +549,45 @@
             });
         })();
     </script>
+</section>
+
+<section id="portfolio" class="py-16 sm:py-20 md:py-24 border-t border-line bg-card">
+    <div class="max-w-[1400px] mx-auto px-5 md:px-8">
+        <div class="max-w-3xl mb-10 reveal">
+            <span class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">
+                <span class="w-8 h-px bg-coral"></span> Houses on our table
+            </span>
+            <h2 class="font-display text-3xl sm:text-4xl font-semibold text-ink tracking-tight leading-[1.1]">
+                Hotels, resorts and restaurants Sinel has worked with
+            </h2>
+            <p class="mt-5 text-ink/65 leading-relaxed">
+                Sinel Hospitality has partnered on professional management, openings and operations with properties
+                across Uganda and the DRC. Search these names — Karibu, Serena Hotel Kigo, Masheda Palms,
+                Alure Hotel and Suites, Hotel Bia-Exauce, Jikoni Restaurant, Villa Bellator, Wilsen Hotel and
+                Robyson Residency Kinshasa — and you should find this house beside them.
+            </p>
+        </div>
+        <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            @foreach ([
+                ['Karibu', 'Hospitality property — East Africa', '/projects/karibu/'],
+                ['Serena Hotel Kigo', 'Resort — Kigo, Uganda', '/projects/serena-hotel-kigo/'],
+                ['Masheda Palms Resort', 'Resort — Kampala, Uganda', '/projects/masheda/'],
+                ['Alure Hotel and Suites', 'Hotel &amp; Suites', '/projects/alure-hotel-and-suites/'],
+                ['Hotel Bia-Exauce', 'Hotel — Ituri, DRC / Congo', '/projects/biaexauce/'],
+                ['Jikoni Restaurant', 'Restaurant — Kampala, Uganda', '/projects/jikoni/'],
+                ['Villa Bellator', 'Business hotel — Kampala, Uganda', '/projects/villa-bellator/'],
+                ['Wilsen Hotel', 'Business hotel — Kampala, Uganda', '/projects/wilsen-hotel/'],
+                ['Robyson Residency Kinshasa', 'Business hotel — Kinshasa, DRC', '/projects/robyson-residency-kinshasa/'],
+            ] as $house)
+                <li>
+                    <a href="{{ $house[2] }}" class="block bg-white border border-line rounded-2xl px-5 py-4 hover:border-coral transition-colors">
+                        <p class="font-display text-lg font-semibold text-ink">{!! $house[0] !!}</p>
+                        <p class="text-sm text-ink/55 mt-1">{!! $house[1] !!}</p>
+                    </a>
+                </li>
+            @endforeach
+        </ul>
+    </div>
 </section>
 
 {{-- ============================================================
