@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login — Sinel Hospitality</title>
+    <link rel="canonical" href="https://sinelhospitality.site/admin/login/">
+    <link rel="icon" href="/sinel_logo.png" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: '#2A241E',
+                        emerald: { DEFAULT: '#3D5A80', light: '#6B86A8', deep: '#1E2947' },
+                        coral: { DEFAULT: '#C4A574', dark: '#A88858' },
+                        sage: '#F4EFE6',
+                        card: '#FFFBF5',
+                        line: '#E5D9C8',
+                    },
+                    fontFamily: {
+                        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        body: ['Outfit', 'sans-serif'],
+                        mono: ['Outfit', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="antialiased bg-sage text-ink font-body min-h-screen">
+
+<div class="min-h-screen grid lg:grid-cols-2">
+
+    <div class="hidden lg:flex flex-col justify-between bg-emerald-deep text-sage p-12 relative overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1400&q=80" alt="" class="absolute inset-0 w-full h-full object-cover opacity-40">
+        <div class="absolute inset-0 bg-gradient-to-t from-emerald-deep via-emerald-deep/70 to-emerald-deep/40"></div>
+        <div class="relative">
+            <a href="/" class="flex items-center gap-3">
+                <span class="w-10 h-10 rounded-full bg-sage/10 border border-sage/20 flex items-center justify-center font-display font-semibold">S</span>
+                <span class="font-display text-lg font-semibold">Sinel Hospitality</span>
+            </a>
+        </div>
+        <div class="relative max-w-md">
+            <p class="font-display text-3xl italic leading-snug">
+                &ldquo;To be perceived and acknowledged as the best hospitality company in Africa.&rdquo;
+            </p>
+            <p class="mt-4 text-sm text-sage/50 font-mono uppercase tracking-wide">Our Vision</p>
+        </div>
+        <div class="relative text-xs text-sage/40 font-mono">&copy; 2026 Sinel Hospitality</div>
+    </div>
+
+    <div class="flex items-center justify-center p-6 sm:p-10">
+        <div class="w-full max-w-sm">
+            <a href="/" class="lg:hidden flex items-center gap-3 mb-10">
+                <span class="w-10 h-10 rounded-full bg-emerald flex items-center justify-center font-display text-sage font-semibold">S</span>
+                <span class="font-display text-lg font-semibold text-ink">Sinel Hospitality</span>
+            </a>
+
+            <div class="flex items-center gap-1 bg-line/50 rounded-full p-1 mb-8 w-fit">
+                <a href="/login/"
+                   class="px-4 py-2 rounded-full text-sm font-semibold transition-colors text-ink/50 hover:text-ink">
+                    Student
+                </a>
+                <a href="/admin/login/"
+                   class="px-4 py-2 rounded-full text-sm font-semibold transition-colors bg-white text-ink shadow-sm">
+                    Admin / Staff
+                </a>
+            </div>
+
+            <h1 class="font-display text-3xl font-semibold text-ink tracking-tight mb-2">
+                Staff sign in
+            </h1>
+            <p class="text-ink/60 mb-8">
+                Sign in to manage the site.
+            </p>
+
+            <form method="post" action="/login/" class="space-y-5">
+                <input type="hidden" name="portal" value="admin">
+
+                <div>
+                    <label for="email" class="block text-sm font-medium text-ink mb-2">Email</label>
+                    <input type="email" name="email" id="email" required autofocus
+                           class="w-full rounded-xl border border-line px-4 py-2.5 text-sm focus:outline-none focus:border-emerald"
+                           placeholder="you@example.com">
+                </div>
+
+                <div>
+                    <label for="password" class="block text-sm font-medium text-ink mb-2">Password</label>
+                    <input type="password" name="password" id="password" required
+                           class="w-full rounded-xl border border-line px-4 py-2.5 text-sm focus:outline-none focus:border-emerald"
+                           placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+                </div>
+
+                <label class="flex items-center gap-2.5 cursor-pointer">
+                    <input type="checkbox" name="remember" value="1" class="w-4 h-4 rounded border-line text-emerald focus:ring-emerald">
+                    <span class="text-sm text-ink/60">Remember me</span>
+                </label>
+
+                <button type="submit"
+                        class="w-full inline-flex items-center justify-center gap-2 bg-emerald hover:bg-emerald-light text-white font-semibold px-6 py-3 rounded-full transition-colors">
+                    Sign In
+                </button>
+            </form>
+
+            <a href="/" class="mt-8 inline-flex items-center gap-2 text-sm text-ink/40 hover:text-ink transition-colors">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Back to site
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

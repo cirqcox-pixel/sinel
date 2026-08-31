@@ -34,10 +34,17 @@ class ExportGitHubPages extends Command
         URL::forceRootUrl($baseUrl);
         URL::forceScheme('https');
 
+        $cname = $output.DIRECTORY_SEPARATOR.'CNAME';
+        $cnameContents = is_file($cname) ? File::get($cname) : null;
+
         File::deleteDirectory($output);
         File::ensureDirectoryExists($output);
 
-        $paths = ['/', '/academy', '/projects'];
+        if ($cnameContents) {
+            File::put($cname, $cnameContents);
+        }
+
+        $paths = ['/', '/academy', '/projects', '/login', '/admin/login'];
 
         foreach (Project::query()->published()->ordered()->get() as $project) {
             $paths[] = '/projects/'.$project->slug;
@@ -63,6 +70,7 @@ class ExportGitHubPages extends Command
         $this->copyPublicAssets($output);
         File::put($output.DIRECTORY_SEPARATOR.'.nojekyll', '');
         File::copy($output.DIRECTORY_SEPARATOR.'index.html', $output.DIRECTORY_SEPARATOR.'404.html');
+        $this->injectMissingRouteRedirects($output.DIRECTORY_SEPARATOR.'404.html');
 
         $this->info("Static site exported to {$output}");
         $this->info("GitHub Pages URL: {$baseUrl}/");
@@ -126,5 +134,27 @@ class ExportGitHubPages extends Command
             },
             $html
         ) ?? $html;
+    }
+
+    protected function injectMissingRouteRedirects(string $fourOhFour): void
+    {
+        if (! is_file($fourOhFour)) {
+            return;
+        }
+
+        $script = <<<'HTML'
+<script>
+(function () {
+  var path = window.location.pathname.replace(/\/+$/, '') || '/';
+  var dest = { '/admin/login': '/admin/login/', '/login': '/login/' }[path];
+  if (dest) {
+    window.location.replace(dest + window.location.search + window.location.hash);
+  }
+})();
+</script>
+HTML;
+
+        $html = File::get($fourOhFour);
+        File::put($fourOhFour, preg_replace('/<head>/i', '<head>'."\n".$script, $html, 1) ?? $html);
     }
 }
