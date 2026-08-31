@@ -103,7 +103,7 @@ class ExportGitHubPages extends Command
             }
         }
 
-        foreach (['sinel_logo.png', 'favicon.ico', 'robots.txt', 'sitemap.xml'] as $file) {
+        foreach (['sinel_logo.png', 'favicon.ico', 'robots.txt', 'sitemap.xml', 'google1f4cab0dbc1d8189.html'] as $file) {
             $from = public_path($file);
             if (is_file($from)) {
                 File::copy($from, $output.DIRECTORY_SEPARATOR.$file);
