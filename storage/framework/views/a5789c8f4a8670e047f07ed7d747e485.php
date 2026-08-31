@@ -1,0 +1,151 @@
+
+
+<?php $__env->startSection('title', 'Sinel Academy — Hospitality Training | Sinel Hospitality'); ?>
+<?php $__env->startSection('meta_description', 'Sinel Academy turns Sinel Hospitality\'s advisory playbooks into structured, property-ready training for hotel, resort and restaurant teams across East Africa.'); ?>
+
+<?php $__env->startSection('content'); ?>
+
+
+<section class="relative overflow-hidden bg-emerald-deep text-sage">
+    <div class="max-w-[1400px] mx-auto px-5 md:px-8 pt-20 pb-20 sm:pb-24">
+        <a href="<?php echo e(route('home')); ?>#academy" class="inline-flex items-center gap-2 text-sm text-sage/60 hover:text-coral transition-colors mb-10">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to home
+        </a>
+
+        <span class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-coral mb-6">
+            <span class="w-8 h-px bg-coral"></span> Sinel Academy
+        </span>
+        <h1 class="font-display text-[2.4rem] leading-[1.08] sm:text-6xl font-semibold tracking-tight max-w-3xl">
+            Where hospitality talent<br class="hidden sm:block"> <span class="italic">is built, not just hired.</span>
+        </h1>
+        <p class="mt-6 text-lg text-sage/70 max-w-xl leading-relaxed">
+            Sinel Academy turns our advisory playbooks into structured, property-ready training —
+            so your team doesn't just learn the standard, they can run it from day one.
+        </p>
+        <div class="mt-9 flex flex-wrap items-center gap-4">
+            <a href="#apply" class="inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white font-semibold px-6 py-3.5 rounded-full transition-colors">
+                Enquire About a Cohort
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-16 sm:py-20 md:py-24 border-b border-line">
+    <div class="max-w-[1400px] mx-auto px-5 md:px-8">
+        <div class="max-w-2xl mb-14 reveal">
+            <span class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">
+                <span class="w-8 h-px bg-coral"></span> How It Works
+            </span>
+            <h2 class="font-display text-3xl sm:text-4xl font-semibold text-ink tracking-tight leading-[1.1]">
+                Four pillars, one goal:<br><span class="italic text-emerald">property-ready teams.</span>
+            </h2>
+        </div>
+
+        <?php
+            $pillars = [
+                [
+                    'title' => 'Adaptive Curriculum',
+                    'copy' => 'Modules built from Sinel Hospitality\'s own operating playbooks, adapted to each property\'s brand standard and star rating.',
+                    'icon' => 'trending-up',
+                ],
+                [
+                    'title' => 'Cohort-Based Learning',
+                    'copy' => 'Small, scheduled cohorts of hotel, resort and restaurant staff learning together — not a self-paced video library.',
+                    'icon' => 'users',
+                ],
+                [
+                    'title' => 'Property-Ready Certification',
+                    'copy' => 'Every graduate is assessed against the same standards our consultants audit properties against.',
+                    'icon' => 'award',
+                ],
+                [
+                    'title' => 'Measurable Performance Gains',
+                    'copy' => 'Guest satisfaction, service timing and safety-audit scores tracked before and after each cohort.',
+                    'icon' => 'bar-chart',
+                ],
+            ];
+            $pillarIcons = [
+                'trending-up' => '<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>',
+                'users' => '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+                'award' => '<circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/>',
+                'bar-chart' => '<line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/>',
+            ];
+        ?>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <?php $__currentLoopData = $pillars; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $i => $pillar): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <div class="reveal bg-card border border-line rounded-3xl p-7" style="transition-delay: <?php echo e($i * 60); ?>ms">
+                    <span class="w-12 h-12 rounded-full bg-emerald/10 flex items-center justify-center">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="text-emerald">
+                            <?php echo $pillarIcons[$pillar['icon']]; ?>
+
+                        </svg>
+                    </span>
+                    <h3 class="mt-5 font-display text-lg font-semibold text-ink leading-snug"><?php echo e($pillar['title']); ?></h3>
+                    <p class="mt-3 text-sm text-ink/60 leading-relaxed"><?php echo e($pillar['copy']); ?></p>
+                </div>
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-16 sm:py-20 md:py-24 border-b border-line">
+    <div class="max-w-[1400px] mx-auto px-5 md:px-8 grid lg:grid-cols-2 gap-14 items-start">
+        <div class="reveal">
+            <span class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">
+                <span class="w-8 h-px bg-coral"></span> Who It's For
+            </span>
+            <h2 class="font-display text-3xl sm:text-4xl font-semibold text-ink tracking-tight leading-[1.1]">
+                Designed for hotel, resort<br>&amp; restaurant teams.
+            </h2>
+            <p class="mt-5 text-ink/65 leading-relaxed max-w-lg">
+                Whether you're onboarding a new opening team or upskilling an existing property,
+                Sinel Academy cohorts are built around real operating roles — not generic hospitality theory.
+            </p>
+        </div>
+
+        <?php
+            $tracks = [
+                ['role' => 'Front Office & Guest Services', 'copy' => 'Check-in flow, guest recovery, and brand-standard service scripts.'],
+                ['role' => 'Food & Beverage', 'copy' => 'Menu costing, service sequencing, and food-safety compliance.'],
+                ['role' => 'Housekeeping & Facilities', 'copy' => 'Quality audits, room turnover standards, and preventive maintenance.'],
+                ['role' => 'Supervisors & Heads of Department', 'copy' => 'Team leadership, scheduling, and performance management.'],
+            ];
+        ?>
+        <div class="reveal space-y-4">
+            <?php $__currentLoopData = $tracks; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $i => $track): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <div class="flex items-start gap-4 bg-card border border-line rounded-2xl px-5 py-4" style="transition-delay: <?php echo e($i * 50); ?>ms">
+                    <span class="font-mono text-xs text-emerald mt-1 shrink-0"><?php echo e(sprintf('%02d', $i + 1)); ?></span>
+                    <div>
+                        <p class="font-semibold text-ink"><?php echo e($track['role']); ?></p>
+                        <p class="text-sm text-ink/60 mt-1"><?php echo e($track['copy']); ?></p>
+                    </div>
+                </div>
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+        </div>
+    </div>
+</section>
+
+
+<section id="apply" class="py-16 sm:py-20 md:py-24 bg-emerald-deep text-sage">
+    <div class="max-w-[1400px] mx-auto px-5 md:px-8 max-w-2xl">
+        <span class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-coral mb-5">
+            <span class="w-8 h-px bg-coral"></span> Enquire
+        </span>
+        <h2 class="font-display text-3xl sm:text-4xl font-semibold tracking-tight leading-[1.1] mb-8">
+            Bring a cohort to your property.
+        </h2>
+
+        
+        <a href="mailto:train@sinelhospitality.com?subject=Sinel%20Academy%20Enquiry"
+           class="inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white font-semibold px-6 py-3.5 rounded-full transition-colors">
+            Email Sinel Academy
+        </a>
+        <p class="mt-4 text-sm text-sage/50">Or call +256 200 902 188.</p>
+    </div>
+</section>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH /home/cirqzhav/sinel/sinel_web/resources/views/academy.blade.php ENDPATH**/ ?>

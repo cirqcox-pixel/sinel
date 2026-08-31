@@ -1,0 +1,15 @@
+[04-Jul-2026 14:14:42 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\Admin\ProjectController as AdminProjectController because the name is already in use in /home/cirqzhav/sinel/sinel_web/routes/web.php on line 11
+[04-Jul-2026 14:17:36 UTC] PHP Fatal error:  Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home/cirqzhav/sinel/sinel_web/vendor/symfony/http-foundation/Response.php:393) in /home/cirqzhav/sinel/sinel_web/vendor/symfony/http-foundation/Response.php:328
+Stack trace:
+#0 /home/cirqzhav/sinel/sinel_web/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(263): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():262}()
+#2 /home/cirqzhav/sinel/sinel_web/vendor/symfony/http-foundation/Response.php(328): header()
+#3 /home/cirqzhav/sinel/sinel_web/vendor/symfony/http-foundation/Response.php(407): Symfony\Component\HttpFoundation\Response->sendHeaders()
+#4 /home/cirqzhav/sinel/sinel_web/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(226): Symfony\Component\HttpFoundation\Response->send()
+#5 /home/cirqzhav/sinel/sinel_web/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(203): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#6 /home/cirqzhav/sinel/sinel_web/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(263): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#7 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->{closure:Illuminate\Foundation\Bootstrap\HandleExceptions::forwardsTo():262}()
+#8 {main}
+  thrown in /home/cirqzhav/sinel/sinel_web/vendor/symfony/http-foundation/Response.php on line 328
+[04-Jul-2026 17:23:28 UTC] PHP Fatal error:  Cannot redeclare class App\Http\Controllers\Admin\ProjectController (previously declared in /home/cirqzhav/sinel/sinel_web/app/Http/Controllers/ProjectController.php:10) in /home/cirqzhav/sinel/sinel_web/app/Http/Controllers/ProjectController.php on line 10
+[04-Jul-2026 17:24:21 UTC] PHP Fatal error:  Cannot redeclare class App\Http\Controllers\Admin\ProjectController (previously declared in /home/cirqzhav/sinel/sinel_web/app/Http/Controllers/ProjectController.php:10) in /home/cirqzhav/sinel/sinel_web/app/Http/Controllers/ProjectController.php on line 10
